@@ -3,20 +3,46 @@
 
   {%- include head.html -%}
 
+  {%- if page.layout == 'post' -%}
+  <body data-bs-spy="scroll" data-bs-target="#toc" data-bs-offset="160">
+  {%- else -%}
   <body>
+  {%- endif -%}
 
     {%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <main>
+      {{ content }}
     </main>
 
     {%- include footer.html -%}
 
     <script src="{{ '/assets/javascript/bootstrap.bundle.min.js' | relative_url }}"></script>
 
+    <script>
+      window.addEventListener('scroll', function() {
+        var element = document.getElementById('site-header');
+        var scrollTop = window.scrollY || window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop || 0;
+
+        if (scrollTop > 50) {
+          element.classList.add('scrolled');
+        } else {
+          element.classList.remove('scrolled');
+        }
+      });
+
+      /* Offset Scrollspy scrolling */
+      const tocLinks = document.querySelectorAll('#toc .nav-link');
+      Array.prototype.forEach.call(tocLinks, function(tocLink) {
+        tocLink.addEventListener('click', event => {
+          event.preventDefault();
+          var targetElement = document.getElementById(event.target.getAttribute('href').slice(1));
+          var targetElementPosition = targetElement.getBoundingClientRect().top;
+          var offsetPosition = targetElementPosition + window.pageYOffset - 112;
+          window.scrollTo({top: offsetPosition, behavior: 'smooth'});
+        });
+      });
+    </script>
   </body>
 
 </html>

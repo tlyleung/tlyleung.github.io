@@ -1,6 +1,73 @@
 ---
 ---
 
-$font-family-sans-serif: 'Roboto', sans-serif;
+$enable-negative-margins: true;
+
+$body-bg: #fefef4;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  xxxl: 1920px
+);
+
+$font-family-sans-serif: 'Hanken Grotesk', sans-serif;
 
 @import "bootstrap/bootstrap";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 40px;
+  font-size: 1rem;
+
+  @include media-breakpoint-down(lg) {
+    font-size:  0.875rem;
+  }
+}
+
+footer {
+  height: 40px;
+  line-height: 40px;
+}
+
+article {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+}
+
+/*
+ *  Layout
+ */
+
+#site-header {
+  &.scrolled{
+    background-color: $body-bg;
+    transition: background-color 200ms linear;
+  }
+}
+
+.pt-header {
+  padding-top: 56px;
+}
+
+.sticky-top {
+  top: 64px;
+}
+
+#toc {
+  .nav-link {
+
+    &.active {
+      color: $body-color !important;
+    }
+  }
+}

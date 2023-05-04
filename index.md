@@ -4,3 +4,6 @@
 
 layout: home
 ---
+
+Hi there. I’m Timothy, a Machine Learning Engineer with 8 years of experience building AI-driven products.
+

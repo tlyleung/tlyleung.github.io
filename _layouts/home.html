@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+
+<div class="container-xxxl ms-0 pt-header">
+
+  <h1 class="my-5 py-5">{{ content }}</h1>
+
+  {%- if site.posts.size > 0 -%}
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      {%- for post in site.posts -%}
+      <div class="col position-relative">
+        <p class="mb-1"><a href="{{ post.url | relative_url }}" class="stretched-link"><img class="img-fluid" style="background-color: #f3f1e5;" src="/assets/images/placeholder.png" alt=""></a></p>
+        <p class="mb-0">{{ post.title | escape }}</p>
+        {%- assign date_format = site.minima.date_format | default: "%-d %B %Y" -%}
+        <p class="mb-0">{{ post.date | date: date_format }}</p>
+      </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</div>

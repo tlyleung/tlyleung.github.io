@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<article class="container-xxxl ms-0">
+  <div class="row pt-header mb-5 pb-5" style="background-color: #f3f1e5;">
+      <div class="col-xl-2 d-none d-xl-block"></div>
+      <div class="col-12 col-md-9 col-xl-6 pt-5">
+        <time datetime="{{ page.date | date_to_xmlschema }}">
+          {%- assign date_format = site.minima.date_format | default: "%-d %B %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+        <h1 class="mb-5">{{ page.title | escape }}</h1>
+        <img src="/assets/images/placeholder.png" class="img-fluid" alt="">
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-2 d-none d-xl-block">
+      <nav id="toc" class="navbar sticky-top my-n2 py-0">
+        {% include toc.html html=content class='nav.flex-column' item_class='nav-item' submenu_class='nav.flex-column.ms-4' anchor_class='nav-link.link-secondary.px-0' %}
+      </nav>
+    </div>
+    <div class="col-12 col-md-9 col-xl-6">
+      {{ content }}
+    </div>
+  </div>
+  {% if page.footnotes %}
+  <div class="row pt-3 border-top">
+    <div class="col-xl-2">Footnotes</div>
+    <div class="col-12 col-md-9 col-xl-6">
+      <p>{{ page.footnotes | escape }}</p>
+    </div>
+  </div>
+  {% endif %}
+  {% if page.references %}
+  <div class="row pt-3 border-top">
+    <div class="col-xl-2">References</div>
+    <div class="col-12 col-md-9 col-xl-6">
+      <p>{{ page.references | escape }}</p>
+    </div>
+  </div>
+  {% endif %}
+  {% if page.acknowledgements %}
+  <div class="row pt-3 border-top">
+    <div class="col-xl-2">Acknowledgements</div>
+    <div class="col-12 col-md-9 col-xl-6">
+      <p>{{ page.acknowledgements | escape }}</p>
+    </div>
+  </div>
+  {% endif %}
+</article>
