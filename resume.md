@@ -58,9 +58,9 @@ permalink: /resume/
 	<div class="row gx-5">
 		<div class="col-2 text-end timeline-segment">2023</div>
 		<div class="col-10 pb-3">
-			<div class="d-flex justify-content-between">
+			<div class="d-sm-flex justify-content-between">
 				<div>Neural Swarm, Hong Kong</div>
-			    <div class="text-end">Co-Founder</div>
+			    <div class="text-sm-end">Co-Founder</div>
 			</div>
 			<p class="text-muted">Led a team that built Machine Learning solutions for innovative startups and established companies in the APAC region.</p>
 			<ul class="text-muted">
@@ -76,9 +76,9 @@ permalink: /resume/
 	<div class="row gx-5">
 		<div class="col-2 text-end timeline-segment">2017</div>
 		<div class="col-10 pb-3">
-			<div class="d-flex justify-content-between">
+			<div class="d-sm-flex justify-content-between">
 				<div>Discovery List, Hong Kong</div>
-			    <div class="text-end">Senior Machine Learning Engineer</div>
+			    <div class="text-sm-end">Senior Machine Learning Engineer</div>
 			</div>
 			<p class="text-muted">Deployed a series of load-balanced AWS EC2 instances running web scrapers and custom-trained Named Entity Recognisers. The system was built using the Python NLTK package and was used to identify and link more than 10,000 product names from news sources.</p>
 		</div>
@@ -86,9 +86,9 @@ permalink: /resume/
 	<div class="row gx-5">
 		<div class="col-2 text-end timeline-segment">2015</div>
 		<div class="col-10 pb-3">
-			<div class="d-flex justify-content-between">
+			<div class="d-sm-flex justify-content-between">
 				<div>QuoteRed, London</div>
-			    <div class="text-end">Technical Co-Founder</div>
+			    <div class="text-sm-end">Technical Co-Founder</div>
 			</div>
 			<p class="text-muted">Incubated through <em>Entrepreneur First</em>, a startup scheme for UK’s brightest graduates. Implemented the Ruby-on-Rails back-end that included a bookmarklet written in jQuery, a comment system backed by PostgreSQL and a type-ahead search bar built using Websolr.</p>
 		</div>
@@ -96,9 +96,9 @@ permalink: /resume/
 	<div class="row gx-5">
 		<div class="col-2 text-end timeline-segment">2013</div>
 		<div class="col-10">
-			<div class="d-flex justify-content-between">
+			<div class="d-sm-flex justify-content-between">
 				<div>Entrepreneurs Partners, London</div>
-			    <div class="text-end">Analyst</div>
+			    <div class="text-sm-end">Analyst</div>
 			</div>
 			<p class="text-muted">Worked with an associate to source deals in the UK and France and performed financial and technical due diligence on startups in the cleantech, healthcare and software sectors.</p>
 		</div>
@@ -110,9 +110,9 @@ permalink: /resume/
 	<div class="row gx-5">
 		<div class="col-2 text-end timeline-segment">2013</div>
 		<div class="col-10 pb-3">
-			<div class="d-flex justify-content-between">
+			<div class="d-sm-flex justify-content-between">
 				<div>Imperial College London</div>
-			    <div class="text-end">PhD Computer Science</div>
+			    <div class="text-sm-end">PhD Computer Science</div>
 			</div>
 			<p class="text-muted">Completed thesis on “Internet Auction Processes and Mechanisms” and served as a Teaching Assistant for two undergraduate subjects: EE4-10 Probability and Stochastic Processes, and EE4-05 Traffic Theory and Queueing Systems.</p>
 		</div>
@@ -120,9 +120,9 @@ permalink: /resume/
 	<div class="row gx-5">
 		<div class="col-2 text-end timeline-segment">2007</div>
 		<div class="col-10 pb-3">
-			<div class="d-flex justify-content-between">
+			<div class="d-sm-flex justify-content-between">
 				<div>University College London (UCL)</div>
-			    <div class="text-end">BSc (Hons.) Computer Science</div>
+			    <div class="text-sm-end">BSc (Hons.) Computer Science</div>
 			</div>
 			<p class="text-muted">Awarded First Class Honours, completing a dissertation on “Query by Humming”, a group project on “Temperature Mapping of the Lunar Surface” and electives in Algorithms, Databases, Logic and Probability.</p>
 		</div>
@@ -130,9 +130,9 @@ permalink: /resume/
 	<div class="row gx-5">
 		<div class="col-2 text-end timeline-segment">2003</div>
 		<div class="col-10">
-			<div class="d-flex justify-content-between">
+			<div class="d-sm-flex justify-content-between">
 				<div>Camberwell Grammar School, Melbourne</div>
-			    <div class="text-end">Victorian Certification of Education</div>
+			    <div class="text-sm-end">Victorian Certification of Education</div>
 			</div>
 			<p class="text-muted">Awarded an ENTER of 99.50 on academic scholarship, placing me in the top 0.5% of students in Victoria and received the Victoria Premier’s Award for Information Technology, recognising outstanding achievement in the VCE.</p>
 		</div>
