@@ -71,3 +71,21 @@ article {
     }
   }
 }
+
+.timeline-segment {
+  position: relative;
+  border-right: thin solid $gray-400;
+}
+
+.timeline-segment::after {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: $body-color;
+  position: absolute;
+  top: 12px;
+  right: 0;
+  margin-top: -6px;
+  margin-right: -6px;
+  content: ' ';
+}
