@@ -1,23 +1,17 @@
 <header id="site-header" class="fixed-top">
   <nav class="navbar navbar-expand">
-    <div class="container-fluid">
+    <div class="container-fluid px-2 px-md-3">
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
       <a class="navbar-brand fs-5" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{ "/" | relative_url }}">Posts</a>
-          </li>
           {%- if page_paths -%}
             {%- for path in page_paths reversed -%}
               {%- assign my_page = site.pages | where: "path", path | first -%}
               {%- if my_page.title -%}
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                <a class="{%- if my_page.url == page.url -%}nav-link p-0 active{%- else -%}nav-link p-0{%- endif -%}" aria-current="page" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
               </li>
               {%- endif -%}
             {%- endfor -%}

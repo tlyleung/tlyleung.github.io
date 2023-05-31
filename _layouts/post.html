@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<article class="container-xxxl ms-0">
-  <div class="row pt-header mb-5 pb-5" style="background-color: #f3f1e5;">
+<article class="container-xxxl px-2 px-md-3">
+  <div class="row pt-header mb-3 pb-4 mb-md-5 pb-md-5" style="background-color: #f3f1e5;">
       <div class="col-xl-2 d-none d-xl-block"></div>
       <div class="col-12 col-md-9 col-xl-6 pt-5">
         <time datetime="{{ page.date | date_to_xmlschema }}">
@@ -10,7 +10,9 @@ layout: default
           {{ page.date | date: date_format }}
         </time>
         <h1 class="mb-5">{{ page.title | escape }}</h1>
-        <img src="/assets/images/placeholder.png" class="img-fluid" alt="">
+        <div class="ratio ratio-1x1">
+          <img src="/assets/images/placeholder.png" class="object-fit-cover" alt="">
+        </div>
       </div>
   </div>
   <div class="row">
