@@ -2,7 +2,7 @@
 layout: default
 ---
 <article class="container-xxxl px-2 px-md-3">
-  <div class="row pt-header mb-3 pb-4 mb-md-5 pb-md-5" style="background-color: #f3f1e5;">
+  <div class="row g-0 mx-n2 mx-md-n3 mb-3 mb-md-5 pt-header px-2 px-md-3 pb-4 pb-md-5" style="background-color: #f3f1e5;">
       <div class="col-xl-2 d-none d-xl-block"></div>
       <div class="col-12 col-md-9 col-xl-6 pt-5">
         <time datetime="{{ page.date | date_to_xmlschema }}">
@@ -15,7 +15,7 @@ layout: default
         </div>
       </div>
   </div>
-  <div class="row">
+  <div class="row g-0">
     <div class="col-xl-2 d-none d-xl-block">
       <nav id="toc" class="navbar sticky-top my-n2 py-0">
         {% include toc.html html=content class='nav.flex-column' item_class='nav-item' submenu_class='nav.flex-column.ms-4' anchor_class='nav-link.link-secondary.px-0' %}
@@ -26,7 +26,7 @@ layout: default
     </div>
   </div>
   {% if page.footnotes %}
-  <div class="row pt-3 border-top">
+  <div class="row g-0 pt-3 border-top">
     <div class="col-xl-2">Footnotes</div>
     <div class="col-12 col-md-9 col-xl-6">
       <p>{{ page.footnotes | escape }}</p>
@@ -34,7 +34,7 @@ layout: default
   </div>
   {% endif %}
   {% if page.references %}
-  <div class="row pt-3 border-top">
+  <div class="row g-0 pt-3 border-top">
     <div class="col-xl-2">References</div>
     <div class="col-12 col-md-9 col-xl-6">
       <p>{{ page.references | escape }}</p>
@@ -42,7 +42,7 @@ layout: default
   </div>
   {% endif %}
   {% if page.acknowledgements %}
-  <div class="row pt-3 border-top">
+  <div class="row g-0 pt-3 border-top">
     <div class="col-xl-2">Acknowledgements</div>
     <div class="col-12 col-md-9 col-xl-6">
       <p>{{ page.acknowledgements | escape }}</p>
