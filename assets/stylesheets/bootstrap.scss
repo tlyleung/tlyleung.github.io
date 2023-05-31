@@ -107,3 +107,13 @@ article {
     --bs-aspect-ratio: 62.5%; // 16x10
   }
 }
+
+.card {
+  img {
+    transition: all 0.2s ease-in-out 0s;
+  }
+
+  &:hover img {
+    transform: scale(1.2);
+  }
+}

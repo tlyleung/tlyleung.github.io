@@ -5,7 +5,7 @@ layout: default
   {%- if site.posts.size > 0 -%}
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-2 g-md-3">
       <div class="col">
-        <div class="card ratio" style="background-color: #f3f1e5; --bs-aspect-ratio: 100%;">
+        <div class="card ratio overflow-hidden" style="background-color: #f3f1e5; --bs-aspect-ratio: 100%;">
           <div class="card-img-overlay d-flex flex-column justify-content-center text-center">
             <h1 class="card-title fs-1 fs-md-3 fs-xl-1"><a href="{{ "/about" | relative_url }}" class="stretched-link link-dark text-decoration-none">Hi there. I’m Timothy, a Machine Learning Engineer with 8 years of experience building AI-driven products.</a></h1>
           </div>
@@ -13,7 +13,7 @@ layout: default
       </div>
       {%- for post in site.posts -%}
       <div class="col">
-        <div class="card ratio" style="background-color: #f3f1e5; --bs-aspect-ratio: 100%;">
+        <div class="card ratio overflow-hidden" style="background-color: #f3f1e5; --bs-aspect-ratio: 100%;">
           <img src="/assets/images/placeholder.png" class="card-img" alt="">
           <div class="card-img-overlay d-flex flex-column justify-content-center text-center">
             <h1 class="card-title fs-1 fs-md-3 fs-xl-1"><a href="{{ post.url | relative_url }}" class="stretched-link link-dark text-decoration-none">{{ post.title | escape }}</a></h1>
