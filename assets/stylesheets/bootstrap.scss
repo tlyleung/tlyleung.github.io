@@ -30,10 +30,10 @@ html {
 
 body {
   margin-bottom: 56px;
-  font-size: 1rem;
+  font-size: 1.25rem;
 
   @include media-breakpoint-down(md) {
-    font-size:  0.875rem;
+    font-size: 1rem;
   }
 }
 
@@ -109,11 +109,11 @@ article {
 }
 
 .card {
-  img {
+  & > img {
     transition: all 0.2s ease-in-out 0s;
   }
 
-  &:hover img {
+  &:hover > img {
     transform: scale(1.2);
   }
 }

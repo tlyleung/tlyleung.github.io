@@ -3,7 +3,7 @@
     <div class="container-fluid px-2 px-md-3">
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
-      <a class="navbar-brand fs-5" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
           {%- if page_paths -%}
