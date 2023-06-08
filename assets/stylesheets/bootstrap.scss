@@ -117,3 +117,47 @@ article {
     transform: scale(1.2);
   }
 }
+
+.multiply {
+  mix-blend-mode: multiply;
+}
+
+article {
+  main {
+    blockquote {
+      border-radius: 0.375rem;
+      margin: 24px 0;
+      padding: 16px;
+      background-color: #f3f1e5;
+    }
+
+    figcaption {
+      font-weight: bold;
+    }
+
+    h1 {
+      margin: 48px 0 24px 0;
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin: 24px 0;
+      font-size: 1.75rem;
+    }
+
+    h3 {
+      margin: 24px 0;
+      font-size: 1.5rem;
+    }
+
+    img {
+      margin: 24px 0;
+      max-width: 100%;
+      height: auto;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+  }
+}

@@ -2,42 +2,47 @@
 layout: default
 ---
 <article class="container-xxxl px-2 px-md-3">
-  <div class="row g-0 mx-n2 mx-md-n3 mb-3 mb-md-5 pt-header px-2 px-md-3 pb-4 pb-md-5" style="background-color: #f3f1e5;">
+  <header class="row g-0 mx-n2 mx-md-n3 mb-3 mb-md-5 pt-header px-2 px-md-3 pb-4 pb-md-5" style="background-color: #f3f1e5;">
       <div class="col-xl-2 d-none d-xl-block"></div>
       <div class="col-12 col-md-9 col-xl-6 pt-5">
         <time datetime="{{ page.date | date_to_xmlschema }}">
           {%- assign date_format = site.minima.date_format | default: "%-d %B %Y" -%}
           {{ page.date | date: date_format }}
         </time>
-        <h1 class="mb-5">{{ page.title | escape }}</h1>
+        <h1>{{ page.title | escape }}</h1>
+        <h3 class="my-5 fst-italic lh-base">{{ page.subtitle | escape }}</h2>
         <div class="ratio ratio-1x1">
-          <img src="/assets/images/placeholder.png" class="object-fit-cover" alt="">
+          <img src="{{ page.splash }}" alt="Abstract artwork">
         </div>
       </div>
-  </div>
+  </header>
   <div class="row g-0">
-    <div class="col-xl-2 d-none d-xl-block">
-      <nav id="toc" class="navbar sticky-top my-n2 py-0">
-        {% include toc.html html=content class='nav.flex-column' item_class='nav-item' submenu_class='nav.flex-column.ms-4' anchor_class='nav-link.link-secondary.px-0' %}
-      </nav>
+    <div class="d-none d-xl-block col-xl-2">
     </div>
-    <div class="col-12 col-md-9 col-xl-6">
+    <main class="col-12 col-md-9 col-xl-6 mb-3 mb-md-5">
       {{ content }}
+    </main>
+    <div class="d-none d-xl-block col-xl-1">
+    </div>
+    <aside class="d-none d-xl-block col-xl-2">
+      <nav id="toc" class="navbar sticky-top pe-4">
+        {% include toc.html html=content h_max=2 class='nav.flex-column' item_class='nav-item' submenu_class='nav.flex-column.ms-4' anchor_class='nav-link.link-secondary.px-0' %}
+      </nav>
+    </aside>
+    <div class="d-none d-xl-block col-xl-1">
     </div>
   </div>
-  {% if page.footnotes %}
+  {% if page.authors %}
   <div class="row g-0 pt-3 border-top">
-    <div class="col-xl-2">Footnotes</div>
+    <div class="col-xl-2">Authors</div>
     <div class="col-12 col-md-9 col-xl-6">
-      <p>{{ page.footnotes | escape }}</p>
-    </div>
-  </div>
-  {% endif %}
-  {% if page.references %}
-  <div class="row g-0 pt-3 border-top">
-    <div class="col-xl-2">References</div>
-    <div class="col-12 col-md-9 col-xl-6">
-      <p>{{ page.references | escape }}</p>
+      <p>
+        {% for author_key in page.authors %}
+          {% assign author = site.data.authors[author_key] %}
+          {{ author.name | escape }}
+          {%- unless forloop.last -%},{%- endunless -%}
+        {% endfor %}
+      </p>
     </div>
   </div>
   {% endif %}

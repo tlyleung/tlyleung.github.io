@@ -8,7 +8,7 @@ permalink: /about/
   <div class="container rounded p-3 p-md-4" style="background-color: #f3f1e5;">
     <div class="row g-3 g-md-4">
       <div class="col-auto">
-        <img src="/assets/images/about/tlyleung.jpg" class="rounded-circle" width="100">
+        <img src="/assets/images/authors/tlyleung.jpg" class="rounded-circle" width="100">
       </div>
       <div class="col">
         <p>👋 I’m Timothy and I’m newly relocated to sunny Singapore with my wife and three cats.</p>
