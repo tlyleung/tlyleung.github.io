@@ -1,6 +1,8 @@
-tlyleung:
-  name: Timothy Leung
-  picture: /assets/images/authors/tlyleung.jpg
 plyleung:
   name: Philip Leung
   picture: /assets/images/authors/plyleung.jpg
+  twitter: plyleung
+tlyleung:
+  name: Timothy Leung
+  picture: /assets/images/authors/tlyleung.jpg
+  twitter: tlyleung

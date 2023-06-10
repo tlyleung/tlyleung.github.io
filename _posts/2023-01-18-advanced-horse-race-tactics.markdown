@@ -1,11 +1,12 @@
 ---
-layout:   post
-title:    Advanced horse race tactics using Trakus coordinate data
-subtitle: The impact of drafting percentage, path efficiency, race strategy and speed fluctuation on horse race tactics.
-date:     2023-01-18 00:00:00 +0800
-splash:   /assets/images/advanced-horse-race-tactics/splash.png
-authors:  [tlyleung, plyleung]
+layout: post
+title: Advanced horse race tactics using Trakus coordinate data
+description: The impact of drafting percentage, path efficiency, race strategy and speed fluctuation on horse race tactics.
+image: /assets/images/advanced-horse-race-tactics/splash.png
+authors: [tlyleung, plyleung]
 acknowledgements: Joe Appelbaum, Addison Howard, Joseph Longo
+canonical_url: "https://www.kaggle.com/tlyleung/advanced-horse-race-tactics-using-coordinate-data"
+permalink: advanced-horse-race-tactics
 ---
 
 > **Author's Note**

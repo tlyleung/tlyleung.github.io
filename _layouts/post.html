@@ -10,9 +10,9 @@ layout: default
           {{ page.date | date: date_format }}
         </time>
         <h1>{{ page.title | escape }}</h1>
-        <h3 class="my-5 fst-italic lh-base">{{ page.subtitle | escape }}</h2>
+        <h3 class="my-5 fst-italic lh-base">{{ page.description | escape }}</h2>
         <div class="ratio ratio-1x1">
-          <img src="{{ page.splash }}" alt="Abstract artwork">
+          <img src="{{ page.image }}" alt="Abstract artwork">
         </div>
       </div>
   </header>

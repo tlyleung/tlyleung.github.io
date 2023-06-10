@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Timothy Leung
-permalink: /about/
 ---
 
 <section class="mb-5">
@@ -71,6 +70,7 @@ permalink: /about/
           <div class="text-sm-end">Co-Founder</div>
       </div>
       <p class="text-muted">Led a team that built Machine Learning solutions for innovative startups and established companies in the APAC region.</p>
+      <p class="text-muted">Recent projects include:</p>
       <ul>
         <li>Horse Race Betting Models: <span class="text-muted">18-month project modelling horse race probabilities for a Hong Kong betting syndicate. End-to-end pipelines built using custom scikit-learn transformers and PyTorch models.</span></li>
         <li>Handwritten Mathematical Expression Recognition: <span class="text-muted">built an online handwriting recognition system for mathematical expressions for a Hong Kong based startup, that created LaTeX markup as output.</span></li>
