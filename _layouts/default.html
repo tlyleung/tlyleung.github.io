@@ -20,6 +20,27 @@
     <script src="{{ '/assets/javascript/bootstrap.bundle.min.js' | relative_url }}"></script>
 
     <script>
+      var codeBlocks = document.querySelectorAll('pre.highlight');
+
+      codeBlocks.forEach(function (codeBlock) {
+        var copyButton = document.createElement('button');
+        copyButton.className = 'btn btn-secondary';
+        copyButton.type = 'button';
+        copyButton.ariaLabel = 'Copy code to clipboard';
+        copyButton.innerText = 'Copy';
+
+        codeBlock.append(copyButton);
+        
+        copyButton.addEventListener('click', function () {
+          var code = codeBlock.querySelector('code').innerText.trim();
+          window.navigator.clipboard.writeText(code);
+          copyButton.innerText = 'Copied';
+          setTimeout(function () {
+            copyButton.innerText = 'Copy';
+          }, 3000);
+        });
+      });
+
       window.addEventListener('scroll', function() {
         var element = document.getElementById('site-header');
         var scrollTop = window.scrollY || window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop || 0;

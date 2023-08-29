@@ -2,7 +2,7 @@
 layout: default
 ---
 <article class="container-xxxl px-2 px-md-3">
-  <header class="row g-0 mx-n2 mx-md-n3 mb-3 mb-md-5 pt-header px-2 px-md-3 pb-4 pb-md-5" style="background-color: #f3f1e5;">
+  <header class="row g-0 mx-n2 mx-md-n3 pt-header px-2 px-md-3 pb-4 pb-md-5">
       <div class="col-xl-2 d-none d-xl-block"></div>
       <div class="col-12 col-md-9 col-xl-6 pt-5">
         <time datetime="{{ page.date | date_to_xmlschema }}">
@@ -10,8 +10,8 @@ layout: default
           {{ page.date | date: date_format }}
         </time>
         <h1>{{ page.title | escape }}</h1>
-        <h3 class="my-5 fst-italic lh-base">{{ page.description | escape }}</h2>
-        <div class="ratio ratio-1x1">
+        <h3 class="mb-5 fst-italic">{{ page.description | escape }}</h2>
+        <div class="ratio ratio-1x1" style="background-color: #f3f1e5;">
           <img src="{{ page.image }}" alt="Abstract artwork">
         </div>
       </div>
@@ -25,7 +25,7 @@ layout: default
     <div class="d-none d-xl-block col-xl-1">
     </div>
     <aside class="d-none d-xl-block col-xl-2">
-      <nav id="toc" class="navbar sticky-top pe-4">
+      <nav id="toc" class="navbar sticky-top mt-n3 pe-4">
         {% include toc.html html=content h_max=2 class='nav.flex-column' item_class='nav-item' submenu_class='nav.flex-column.ms-4' anchor_class='nav-link.link-secondary.px-0' %}
       </nav>
     </aside>
