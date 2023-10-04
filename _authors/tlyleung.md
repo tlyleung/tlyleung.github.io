@@ -10,7 +10,7 @@ title: Timothy Leung
         <img src="/assets/images/authors/tlyleung.jpg" class="rounded-circle" width="100">
       </div>
       <div class="col">
-        <p>👋 I’m Timothy and I’m newly relocated to sunny Singapore with my wife and three cats.</p>
+        <p>👋 I’m Timothy and I live in sunny Singapore with my wife and three cats.</p>
         <p>With over 8 years of experience building AI-driven products for innovative companies around the world, I’m eager to contribute my extensive skillset and collaborate with a cutting-edge team to build the next exciting AI product.</p>
         <p>You can find me on <a href="https://github.com/tlyleung">GitHub</a>, <a href="https://news.ycombinator.com/user?id=tlyleung">Hacker News</a> and <a href="https://linkedin.com/in/tlyl">LinkedIn</a>.</p>
       </div>
