@@ -1,0 +1,46 @@
+<svg id="Light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<defs>
+		<style>
+			.a{fill:currentColor;stroke:none;stroke-linecap:round;stroke-linejoin:round;}
+			.b{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;} 
+		</style>
+	</defs>
+	<title>neural-swarm-1</title>
+	<circle class="a" cx="3" cy="6.75" r="1.5"/>
+	<circle class="a" cx="3" cy="17.25" r="1.5"/>
+
+	<circle class="a" cx="7.5" cy="4.125" r="1.5"/>
+	<circle class="a" cx="7.5" cy="14.625" r="1.5"/>
+
+	<circle class="a" cx="12" cy="1.5" r="1.5"/>
+	<circle class="a" cx="12" cy="12" r="1.5"/>
+	<circle class="a" cx="12" cy="22.5" r="1.5"/>
+
+	<circle class="a" cx="16.5" cy="9.375" r="1.5"/>
+	<circle class="a" cx="16.5" cy="19.875" r="1.5"/>
+
+	<circle class="a" cx="21" cy="6.75" r="1.5"/>
+	<circle class="a" cx="21" cy="17.25" r="1.5"/>
+
+
+	<line class="b" x1="3" y1="6.75" x2="3" y2="17.25"/>
+
+	<line class="b" x1="7.5" y1="4.125" x2="7.5" y2="14.625"/>
+	
+	<line class="b" x1="12" y1="1.5" x2="12" y2="12"/>
+	<line class="b" x1="12" y1="12" x2="12" y2="22.5"/>
+	
+	<line class="b" x1="16.5" y1="9.375" x2="16.5" y2="19.875"/>
+	
+	<line class="b" x1="21" y1="6.75" x2="21" y2="17.25"/>
+
+
+	<line class="b" x1="3" y1="6.75" x2="12" y2="12"/>
+	<line class="b" x1="3" y1="17.25" x2="12" y2="22.5"/>
+
+	<line class="b" x1="7.5" y1="4.125" x2="16.5" y2="9.375"/>
+	<line class="b" x1="7.5" y1="14.625" x2="16.5" y2="19.875"/>
+
+	<line class="b" x1="12" y1="1.5" x2="21" y2="6.75"/>
+	<line class="b" x1="12" y1="12" x2="21" y2="17.25"/>
+</svg>
