@@ -2377,7 +2377,7 @@ Public odds significantly undervalue horses with lower speed fluctuations. If th
 
 [^bolton86]: [Bolton, R. N., & Chapman, R. G. (1986). Searching for Positive Returns at the Track: A Multinomial Logit Model for Handicapping Horse Races. *Management Science*.](https://www.gwern.net/docs/statistics/decision/1986-bolton.pdf)
 
-[^chellel18]: [The Gambler Who Cracked the Horse-Racing Code. *Bloomberg Businessweek.*](https://www.bloomberg.com/news/features/2018-05-03/the-gambler-who-cracked-the-horse-racing-code)
+[^chellel18]: [Chellel, K. (2018). The Gambler Who Cracked the Horse-Racing Code. *Bloomberg Businessweek.*](https://www.bloomberg.com/news/features/2018-05-03/the-gambler-who-cracked-the-horse-racing-code)
 
 [^kelly56]: [Kelly, J. L. (1956). A New Interpretation of Information Rate. *Bell System Technical Journal*.](https://www.princeton.edu/~wbialek/rome/refs/kelly_56.pdf)
 
