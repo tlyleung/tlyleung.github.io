@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Advanced horse race tactics using Trakus coordinate data
+title: Advanced Horse Race Tactics using Trakus Coordinate Data
 description: The impact of drafting percentage, path efficiency, race strategy and speed fluctuation on horse race tactics.
 image: /assets/images/advanced-horse-race-tactics/splash.png
 authors: [tlyleung, plyleung]
