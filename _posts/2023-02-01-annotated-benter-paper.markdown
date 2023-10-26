@@ -138,6 +138,7 @@ Additionally, there will always be a significant amount of "inside information" 
 It can be presumed that valid fundamental information exists which can not be systematically or practically incorporated into a statistical model. Therefore, any statistical model, however well developed, will always be incomplete. An extremely important step in model development, and one that the author believes has been generally overlooked in the literature, is the estimation of the relation of the model's probability estimates to the public's estimates, and the adjustment of the model's estimates to incorporate whatever information can be gleaned from the public's estimates. The public's implied probability estimates generally correspond well with the actual frequencies of winning. This can be shown with a table of estimated probability versus actual frequency of winning (Table 1)
 
 {::options parse_block_html="true" /}
+<div class="table-responsive">
 <figure>
 <figcaption markdown="span">Table 1: Public Estimate vs. Actual Frequency</figcaption>
 
@@ -156,9 +157,11 @@ It can be presumed that valid fundamental information exists which can not be sy
 {: .table .table-striped }
 \# races = 3198, \# horses = 32877
 </figure>
+</div>
 {::options parse_block_html="false" /}
 
 {::options parse_block_html="true" /}
+<div class="table-responsive">
 <figure>
 <figcaption markdown="span">Table 2: Fundamental Model vs. Actual Frequency</figcaption>
 
@@ -177,6 +180,7 @@ It can be presumed that valid fundamental information exists which can not be sy
 {: .table .table-striped }
 \# races = 3198, \# horses = 32877
 </figure>
+</div>
 {::options parse_block_html="false" /}
 
 **range** = the range of estimated probabilities
@@ -257,6 +261,7 @@ for start, end in DATE_RANGES:
 ```
 
 {::options parse_block_html="true" /}
+<div class="table-responsive">
 <figure>
 <figcaption markdown="span">Table B: Public Estimate vs. Actual Frequency (1986-1993)</figcaption>
 
@@ -275,10 +280,12 @@ for start, end in DATE_RANGES:
 {: .table .table-striped }
 \# races = 3377, \# starters = 34745
 </figure>
+</div>
 {::options parse_block_html="false" /}
 
 
 {::options parse_block_html="true" /}
+<div class="table-responsive">
 <figure>
 <figcaption markdown="span">Table C: Public Estimate vs. Actual Frequency (1996-2003)</figcaption>
 
@@ -297,10 +304,12 @@ for start, end in DATE_RANGES:
 {: .table .table-striped }
 \# races = 4534, \# starters = 58272
 </figure>
+</div>
 {::options parse_block_html="false" /}
 
 
 {::options parse_block_html="true" /}
+<div class="table-responsive">
 <figure>
 <figcaption markdown="span">Table D: Public Estimate vs. Actual Frequency (2006-2013)</figcaption>
 
@@ -319,10 +328,12 @@ for start, end in DATE_RANGES:
 {: .table .table-striped }
 \# races = 5261, \# starters = 65992
 </figure>
+</div>
 {::options parse_block_html="false" /}
 
 
 {::options parse_block_html="true" /}
+<div class="table-responsive">
 <figure>
 <figcaption markdown="span">Table E: Public Estimate vs. Actual Frequency (2016-2023)</figcaption>
 
@@ -341,12 +352,14 @@ for start, end in DATE_RANGES:
 {: .table .table-striped }
 \# races = 5757, \# starters = 70071
 </figure>
+</div>
 {::options parse_block_html="false" /}
 
 
 A multinomial logit model using fundamental factors will also naturally produce an internally consistent set of probability estimates (Table 2). Here again there is generally good correspondence between estimated and actual frequencies. Table 2 however conceals a major, (and from a wagering point of view, disastrous) type of bias inherent in the fundamental model's probabilities. Consider the following two tables which represent roughly equal halves of the sample in Table 2. Table 3 shows the fundamental model's estimate versus actual frequency for those horses where the public's probability estimate was greater the fundamental model's. Table 4 is the same except that it is for those horses whose public estimate was less than the fundamental model's.
 
 {::options parse_block_html="true" /}
+<div class="table-responsive">
 <figure>
 <figcaption markdown="span">Table 3: Fundamental Model vs. Actual Frequency When Public Estimate Is Greater Than Model Estimate</figcaption>
 
@@ -365,9 +378,11 @@ A multinomial logit model using fundamental factors will also naturally produce 
 {: .table .table-striped }
 \# races = 3198, \# horses = 15741
 </figure>
+</div>
 {::options parse_block_html="false" /}
 
 {::options parse_block_html="true" /}
+<div class="table-responsive">
 <figure>
 <figcaption markdown="span">Table 4: Fundamental Model vs. Actual Frequency When Public Estimate Is Less Than Model Estimate</figcaption>
 
@@ -386,6 +401,7 @@ A multinomial logit model using fundamental factors will also naturally produce 
 {: .table .table-striped }
 \# races = 3198, \# horses = 17136
 </figure>
+</div>
 {::options parse_block_html="false" /}
 
 There is an extreme and consistent bias in both tables. In virtually every range the actual frequency is significantly different than the fundamental model's estimate, and always in the direction of being closer to the public's estimate. The fundamental model's estimate of the probability cannot be considered to be an unbiased estimate independent of the public's estimate. Table 4 is particularly important because it is comprised of those horses that the model would have one bet on, that is, horses whose model-estimated probability is greater than their public probability. It is necessary to correct for this bias in order to accurately estimate the advantage of any particular bet.'
@@ -467,6 +483,7 @@ $$\exp(L) = \prod_{j-1}^{R} c_{ji*}$$
 where $$c_{ji*}$$ denotes the probability as given by equation (1) for the horse $$i*$$ observed to win race $$j$$ (Bolton and Chapman, 1986 p. 1044). Equation (1) should be evaluated using fundamental probability estimates from a model developed on a separate sample of races. Use of "out-of-sample" estimates prevents overestimation of the fundamental model's significance due to "custom-fitting" of the model development sample. The estimated values of $$\alpha$$ and $$\beta$$ can be interpreted roughly as the relative correctness of the model's and the public's estimates. The greater the value of a,the better the model. The probabilities that result from this model also show good correspondence between predicted and actual frequencies of winning (Table 5).
 
 {::options parse_block_html="true" /}
+<div class="table-responsive">
 <figure>
 <figcaption markdown="span">Table 5: Combined Model vs. Actual Frequencies</figcaption>
 
@@ -485,11 +502,13 @@ where $$c_{ji*}$$ denotes the probability as given by equation (1) for the horse
 {: .table .table-striped }
 \# races = 3198, \# horses = 32877
 </figure>
+</div>
 {::options parse_block_html="false" /}
 
 By comparison with Tables 1 and 2, Table 5 shows that there is more *spread* in the combined model's probabilities than in either the public's or the fundamental model's alone, that is, there are more horses in both the very high and very low probability ranges. This indicates that the combined model is more informative. More important is that the new probability estimates are without the bias shown in Tables 3 and 4, and thus are suitable for the accurate estimation of betting advantage. This is borne out by Tables 6 and 7, which are analogous to Tables 3 and 4 above except that they use the combined model probabilities instead of the raw fundamental model probabilities. 
 
 {::options parse_block_html="true" /}
+<div class="table-responsive">
 <figure>
 <figcaption markdown="span">Table 6: Combined Model vs. Actual Frequency When Public Estimate Is Greater Than Model Estimate</figcaption>
 
@@ -508,9 +527,11 @@ By comparison with Tables 1 and 2, Table 5 shows that there is more *spread* in 
 {: .table .table-striped }
 \# races = 3198, \# horses = 15741
 </figure>
+</div>
 {::options parse_block_html="false" /}
 
 {::options parse_block_html="true" /}
+<div class="table-responsive">
 <figure>
 <figcaption markdown="span">Table 7: Combined Model vs. Actual Frequency When Public Estimate Is Less Than Model Estimate</figcaption>
 
@@ -529,6 +550,7 @@ By comparison with Tables 1 and 2, Table 5 shows that there is more *spread* in 
 {: .table .table-striped }
 \# races = 3198, \# horses = 17136
 </figure>
+</div>
 {::options parse_block_html="false" /}
 
 Observe that the above tables show no significant bias one way or the other.
@@ -710,6 +732,7 @@ $$\textrm{advantage} = er - 1$$
 where $$c$$ is the estimated probability of winning the bet and $$div$$ is the expected dividend. For win betting the situation is straightforward. The $$c$$'s are the probability estimates produced by equation (1) above, and the $$div$$'s are the win dividends (as a payoff for a $1 bet) displayed on the tote board. The situation for an example race is illustrated in Table 8.
 
 {::options parse_block_html="true" /}
+<div class="table-responsive">
 <figure>
 <figcaption markdown="span">Table 8</figcaption>
 
@@ -731,6 +754,7 @@ where $$c$$ is the estimated probability of winning the bet and $$div$$ is the e
 | 14 | 0.009 | 0.019 | 0.41 | 43.0 |
 {: .table .table-striped }
 </figure>
+</div>
 {::options parse_block_html="false" /}
 
 **c** = combined (second stage) probability estimate
@@ -759,10 +783,17 @@ In the author's experience, betting the full amount recommended by the Kelly for
 
 Another even more important constraint on betting is the effect that one's bet has on the advantage. In pari-mutuel betting markets each bet decreases the dividend. Even if the bettor possesses infinite wealth, there is a maximum bet producing the greatest expected profit, any amount beyond which lowers the expected profit. The maximum bet can be calculated by writing the equation for expected profit as a function of bet size, and solving for the bet size which maximizes expected profit. This maximum can be surprisingly low as the following example illustrates.
 
+{::options parse_block_html="true" /}
+<div class="table-responsive">
+<figure>
+
 | c  | div | er   |
 |----|-----|------|
 | 06 | 20  | 1.20 |
 {: .table .table-striped }
+</figure>
+</div>
+{::options parse_block_html="false" /}
 
 $$
 \begin{aligned}
@@ -784,11 +815,18 @@ As a practical matter; given the relatively small sizes of most pari-mutuel pool
 
 In addition to win bets, racetracks offer numerous so-called *exotic* bets. These offer some of the highest advantage wagering opportunities. This results from the multiplicative effect on overall advantage of combining more than one advantage horse. For example, suppose that in a particular race there are two horses for which the model's estimate of the win probability is greater than the public's, though not enough so as to make them positive expectation win bets.
 
+{::options parse_block_html="true" /}
+<div class="table-responsive">
+<figure>
+
 | c     |   div |     p |    er |
 |-------|-------|-------|-------|
 | 0.115 | 8.3   | 0.100 | 0.955 |
 | 0.060 | 16.6  | 0.050 | 0.996 |
 {: .table .table-striped }
+</figure>
+</div>
+{::options parse_block_html="false" /}
 
 By the Harville formula (Harville 1973), the estimated probability of a 1,2 or 2,1 finish is
 
@@ -831,6 +869,7 @@ $$\pi_{ijk} = \frac{\pi_i \pi_j \pi_k}{(1 - \pi_i) (1 - \pi_i - \pi_j)}$$
 This formula is significantly biased, and should not be used for betting purposes, as it will lead to serious errors in probability estimations if not corrected for in some way.' (Henery 1981, Stem 1990, Lo and Bacon-Shone 1992). Its principle deficiency is the fact that it does not recognize the increasing randomness of the contests for second and third place. The bias in the Harville formula is demonstrated in Tables 9 and 10 which show the formula's estimated probabilities for horses to finish second and third given that the identity of the horses finishing first (and second) are known. The data set used is the same as that which produced Table 1 above.
 
 {::options parse_block_html="true" /}
+<div class="table-responsive">
 <figure>
 <figcaption markdown="span">Table 9: Harville Model Conditional Probability of 2nd</figcaption>
 
@@ -849,9 +888,11 @@ This formula is significantly biased, and should not be used for betting purpose
 {: .table .table-striped }
 \# races = 3198, \# horses = 29679
 </figure>
+</div>
 {::options parse_block_html="false" /}
 
 {::options parse_block_html="true" /}
+<div class="table-responsive">
 <figure>
 <figcaption markdown="span">Table 10: Harville Model Conditional Probability of 3rd</figcaption>
 
@@ -870,6 +911,7 @@ This formula is significantly biased, and should not be used for betting purpose
 {: .table .table-striped }
 \# races = 3198, \# horses = 26481
 </figure>
+</div>
 {::options parse_block_html="false" /}
 
 The large values of the Z-statistics show the significance of the bias in the Harville formula. The tendency is for low probability horses to finish second and third more often than predicted, and for high probability horses to finish second and third less often. The effect is more pronounced for 3rd place than for 2nd. An effective, and computationally economical way to correct for this is as follows: Given the win probability array, ($$\pi_1, \pi_2, ..., \pi_N)$$, create a second array $$\sigma$$ such that,
@@ -887,6 +929,7 @@ $$\pi_{ijk} = \frac{\pi_i \sigma_j \tau_k}{(1 - \sigma_i) (1 - \tau_i - \tau_j)}
 The parameters $$\gamma$$ and $$\delta$$ can be estimated via maximum likelihood estimation on a sample of past races. For the above data set the maximum likelihood values of the parameters are $$\gamma = 0.81$$ and $$\delta = 0.65$$. Reproducing Tables 9 and 10 above using equations (7--9) with these parameter values substantially corrects for the Harville formula bias as can be seen in Tables 11 and 12.
 
 {::options parse_block_html="true" /}
+<div class="table-responsive">
 <figure>
 <figcaption markdown="span">Table 11: Logistic Model Conditional Probability of 2nd $$(\gamma = 0.81)$$</figcaption>
 
@@ -905,9 +948,11 @@ The parameters $$\gamma$$ and $$\delta$$ can be estimated via maximum likelihood
 {: .table .table-striped }
 \# races = 3198, \# horses = 29679
 </figure>
+</div>
 {::options parse_block_html="false" /}
 
 {::options parse_block_html="true" /}
+<div class="table-responsive">
 <figure>
 <figcaption markdown="span">Table 12: Logistic Model Conditional Probability of 3rd $$(\delta = 0.65)$$</figcaption>
 
@@ -926,6 +971,7 @@ The parameters $$\gamma$$ and $$\delta$$ can be estimated via maximum likelihood
 {: .table .table-striped }
 \# races = 3198, \# horses = 26481
 </figure>
+</div>
 {::options parse_block_html="false" /}
 
 
