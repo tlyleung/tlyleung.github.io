@@ -1,13 +1,15 @@
 ---
 layout: page
 title: Timothy Leung
+image: /assets/images/authors/tlyleung.jpg
+
 ---
 
 <section class="mb-5">
   <div class="container rounded p-3 p-md-4" style="background-color: #f3f1e5;">
     <div class="row g-3 g-md-4">
       <div class="col-auto">
-        <img src="/assets/images/authors/tlyleung.jpg" class="rounded-circle" width="100">
+        <img src="{{ page.image }}" class="rounded-circle" width="100">
       </div>
       <div class="col">
         <p>👋 I’m Timothy and I live in sunny Singapore with my wife and three cats.</p>
