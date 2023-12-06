@@ -312,3 +312,8 @@ pre.highlight > button:active,
 pre.highlight > button:focus {
   opacity: 1;
 }
+
+iframe { 
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
