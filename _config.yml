@@ -33,6 +33,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
   math_engine: katex
 sass:
   style: compressed
