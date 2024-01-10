@@ -3,7 +3,7 @@ layout: post
 title: "Navigating Karlsruhe: Extracting Driving Trajectories from Image Sequences" 
 description: Learn how to train the DeepVO visual odometry model on the KITTI dataset.
 image: /assets/images/visual-odometry/splash.png
-authors: [tlyleung]
+authors: [tlyleung, mburki]
 permalink: visual-odometry
 ---
 
