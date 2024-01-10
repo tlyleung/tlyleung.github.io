@@ -355,3 +355,10 @@ iframe {
 blockquote {
   overflow-x: scroll;
 }
+
+.svg-logo {
+  width: 32px;
+  height: 32px;
+  fill: $body-color;
+  stroke: $body-color;
+}
