@@ -5,12 +5,12 @@ layout: default
   <header class="row g-0 mx-n2 mx-md-n3 pt-header px-2 px-md-3 pb-4 pb-md-5">
       <div class="col-xl-2 d-none d-xl-block"></div>
       <div class="col-12 col-md-9 col-xl-6 pt-5">
-        <time datetime="{{ page.date | date_to_xmlschema }}">
+        <time class="d-block mb-2" datetime="{{ page.date | date_to_xmlschema }}">
           {%- assign date_format = site.minima.date_format | default: "%-d %B %Y" -%}
           {{ page.date | date: date_format }}
         </time>
         <h1>{{ page.title | escape }}</h1>
-        <h3 class="mb-5 fst-italic">{{ page.description | escape }}</h2>
+        <h3 class="mt-4 mb-5">{{ page.description | escape }}</h2>
         <div class="ratio ratio-1x1" style="background-color: #f3f1e5;">
           <img src="{{ page.image }}" alt="Abstract artwork">
         </div>
