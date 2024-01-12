@@ -1,13 +1,15 @@
 ---
 layout: post
-title: "Navigating Karlsruhe: Extracting Driving Trajectories from Image Sequences" 
+title: "Driving Trajectory Extraction from Image Sequences" 
 description: Learn how to train the DeepVO visual odometry model on the KITTI dataset.
 image: /assets/images/visual-odometry/splash.png
 authors: [tlyleung, mburki]
 permalink: visual-odometry
 ---
 
-In this tutorial, we'll training an end-to-end Visual Odometry (VO) model using the KITTI dataset. Visual Odometry is the process by which a vehicle or robot can determine its position and orientation based on its own camera images. It is a crucial technique in the development of robotics and autonomous systems that require spatial awareness to navigate through environments, especial in circumstances where GPS is unreliable and where external references are limited.
+# Introduction
+
+In this tutorial, we'll train an end-to-end Visual Odometry (VO) model using the KITTI dataset. Visual Odometry is the process by which a vehicle or robot can determine its position and orientation based on its own camera images. It is a crucial technique in the development of robotics and autonomous systems that require spatial awareness to navigate through environments, especial in circumstances where GPS is unreliable and where external references are limited.
 
 # KITTI Dataset
 
@@ -218,40 +220,26 @@ Reversing the image normalisation, we can display the first batch of images from
 
 
 ```python
-imgs = [(img + 1) / 2 for img in x[0]]
+import matplotlib.pyplot as plt
 
-for img in imgs:
-    display(TF.to_pil_image(img))
+from torchvision.utils import make_grid
+
+def show(imgs):
+    if not isinstance(imgs, list):
+        imgs = [imgs]
+    fig, axs = plt.subplots(ncols=len(imgs), squeeze=False)
+    for i, img in enumerate(imgs):
+        img = img.detach()
+        img = TF.to_pil_image(img)
+        axs[0, i].imshow(np.asarray(img))
+        axs[0, i].set(xticklabels=[], yticklabels=[], xticks=[], yticks=[])
+    plt.savefig('filename.png', bbox_inches="tight", dpi=300, pad_inches=0)
+        
+grid = make_grid(x[0], nrow=2, normalize=True)
+show(grid)
 ```
-
-
     
 ![png](/assets/images/visual-odometry/visual-odometry_11_0.png){: .multiply }
-    
-
-
-
-    
-![png](/assets/images/visual-odometry/visual-odometry_11_1.png){: .multiply }
-    
-
-
-
-    
-![png](/assets/images/visual-odometry/visual-odometry_11_2.png){: .multiply }
-    
-
-
-
-    
-![png](/assets/images/visual-odometry/visual-odometry_11_3.png){: .multiply }
-    
-
-
-
-    
-![png](/assets/images/visual-odometry/visual-odometry_11_4.png){: .multiply }
-    
 
 
 # Visualizing the Test Trajectory
@@ -599,45 +587,16 @@ Using the code from the blog post, we plot a single batch of input images and op
 
 
 ```python
-import matplotlib.pyplot as plt
-
-
-def plot(imgs, **imshow_kwargs):
-    transform = transforms.ToPILImage()
-    
-    if not isinstance(imgs[0], list):
-        # Make a 2d grid even if there's just 1 row
-        imgs = [imgs]
-
-    num_rows = len(imgs)
-    num_cols = len(imgs[0])
-    _, axs = plt.subplots(nrows=num_rows, ncols=num_cols, squeeze=False)
-    for row_idx, row in enumerate(imgs):
-        for col_idx, img in enumerate(row):
-            ax = axs[row_idx, col_idx]
-            img = transform(img.to("cpu"))
-            ax.imshow(np.asarray(img), **imshow_kwargs);
-            ax.set(xticklabels=[], yticklabels=[], xticks=[], yticks=[]);
-
-    plt.tight_layout()
-```
-
-
-```python
 from torchvision.utils import flow_to_image
 
-
-flow_imgs = flow_to_image(flows[0])
-
+flow_imgs = [img/255 for img in flow_to_image(flows[0])]
 imgs = [(img + 1) / 2 for img in x[0]]
-
-grid = [[img1, flow_img] for (img1, flow_img) in zip(imgs, flow_imgs)]
-plot(grid)
+grid = make_grid([img for pair in zip(imgs, flow_imgs) for img in pair], nrow=2)
+show(grid)
 ```
 
 
 ![png](/assets/images/visual-odometry/visual-odometry_26_0.png){: .multiply }
-    
 
 
 Note: since the car is moving forwards, the pixels move outwards away from the center vanishing point, meaning that the pixels on the left move further left and the pixels on the right move further right.
