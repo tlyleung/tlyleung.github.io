@@ -4,9 +4,9 @@
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
       <a class="navbar-brand" href="{{ "/" | relative_url }}">
-          <svg class="svg-logo" viewBox="1 1 23 23">
-            <use xlink:href="{{ "assets/images/shared/logo.svg#logo" | relative_url }}"></use>
-          </svg>
+        <svg class="svg-logo" viewBox="0 0 24 24">
+          <use xlink:href="{{ "assets/images/shared/logo.svg#logo" | relative_url }}"></use>
+        </svg>
         <span>{{ site.title | escape }}</span>
       </a>
       <div class="collapse navbar-collapse">
