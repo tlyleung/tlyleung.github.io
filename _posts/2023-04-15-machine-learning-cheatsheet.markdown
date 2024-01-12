@@ -12,7 +12,7 @@ permalink: machine-learning-cheatsheet
 
 This cheatsheet attempts to give a high-level overview of the incredibly large field of Machine Learning. Please [contact me](/authors/tlyleung) for corrections/omissions.
 
-*Last updated: 1 July 2023*
+*Last updated: 1 January 2024*
 </section>
 
 <section markdown="1" style="background-image: url('/assets/images/streamline/official-building-3.svg');">
@@ -629,183 +629,22 @@ Train-serving skew is when a model performs well during development but poorly a
 
 Supervised learning models make predictions after seeing lots of data with the correct answers. The model discovers the relationship between the data and the correct answers.
 
-- Linear Models
-  - Logistic Regression
-- Support Vector Machines
-- Nearest Neighbours
-- Decision Trees
-
-
----
-
-## Classification
-
-Classification models predict the likelihood that something belongs to a category. If there are only two possible categories, it's binary classification, while multi-class classification is when there are more than 2 categories.
-
----
-
-## Regression
-
-Regression models predict a numeric value.
-
-Linear Regression:
-
-
-t-SNE (T-distributed Stochastic Neighbor Embedding)
-
-- Logistic Regression:  models probability of binary outcome by using a linear combination of features.y = 1x1 +…+ nxn + 
-  - Pros: fast, efficient, works well for linearly separable data, interpretable and easy to understand
-  - Cons: cannot solve non-linear problems, multi-collinearity
-- Decision tree: split data using features into tree structure
-  - Pros: fast, no data prep required, interpretable
-  - Cons: Non-optimal decision boundary, prone to overfitting 
-
-
-K-nearest neighbours: regression and classification, calculates the k-nearest neighbours to point and averages the label
-Support vector machines: find hyperplane that separates classes by the widest margin
-Random forests: 
-XGBoost: combine many weak learns into a strong learner
-Catboost
-Gradient boosted decision trees
-Naive bayes
-Factorisation machines
-
-
-Learning rate
-
-<img src="/assets/images/machine-learning-cheatsheet/transformer.svg" alt="Transfomer" class="img-fluid">
-
-Transformer models
-BERT
-RNN
-LSTM
-GRU
-Skip connections
-Residual connections
 </section>
 
 <section markdown="1" style="background-image: url('/assets/images/streamline/hierarchy-9.svg');">
 # Models: Unsupervised Learning
+
 Unsupervised learning involves finding patterns and structure in input data without any corresponding output data.
-
-Weakly supervised learning involves learning from a training set that is not perfectly labelled or has noisy labels.
-
-Semi-supervised learning involves learning from a training set that contains a small amount of labelled data and a large amount of unlabeled data.
-
-Active learning involves a model that can request the labels for certain instances from an oracle or expert to improve its learning efficiency.
-
-
-Clustering finds natural groupings in the data.
-K-means clustering
-Dimensionality reduction: minimize the computational resources required to process, store, and analyze data, help mitigate curse of dimensionality, make data visualisation more feasible
-Principal Component Analysis (PCA)
-Anomaly detection
-Latent Dirichlet Allocation (LDA)
 
 </section>
 
 <section markdown="1" style="background-image: url('/assets/images/streamline/chess-figures.svg');">
 # Models: Reinforcement Learning[^spinning_up]
 
-
-
-[Figure 3.1 from Sutton and Barto]
-
-Reinforcement Learning models help agents learn the best action to take in an environment in order to achieve its goal.
-
-The environment is the world that the agent lives in and interacts with. At every step of interaction, the agent sees an observation and decides on an action to take. The agent also perceives a reward signal from the environment, a number that tells it how good or bad the current world state is. The goal of the agent is to maximize its cumulative reward, called return.
-
-Agent-environment interaction loop.
-
-A state $$s$$ is a complete description of the state of the world. There is no information about the world which is hidden from the state. An observation $$o$$ is a partial description of a state, which may omit information.
-
-The set of all valid actions in a given environment is called the action space. Some environments have discrete action spaces, where only a finite number of moves are available to the agent, while other environments have continuous action spaces.
-
-A policy is a rule used by an agent to decide what actions to take.
-
-A trajectory $$\tau$$ is a sequence of states and actions in the world, $$\tau = (s_0, a_0, s_1, a_1, ...)$$.
-
-The reward function $$R$$ is critically important in Reinforcement Learning. It depends on the current state of the world, the action just taken, and the next state of the world: $$r_t = R(s_t, a_t, s_{t+1})$$, although frequently this is simplified to just a dependence on the current state, $$r_t = R(s_t)$$, or state-action pair $$r_t = R(s_t,a_t)$$. One kind of return is the finite-horizon undiscounted return, which is just the sum of rewards obtained in a fixed window of steps. Another kind of return is the infinite-horizon discounted return, which is the sum of all rewards ever obtained by the agent, but discounted by how far off in the future they’re obtained. 
-
-The goal in Reinforcement Learning is to select a policy which maximizes expected return when the agent acts according to it.
-
-It’s often useful to know the value of a state, or state-action pair. By value, we mean the expected return if you start in that state or state-action pair, and then act according to a particular policy forever after.
-
-The basic idea behind the Bellman equations is that the value of your starting point is the reward you expect to get from being there, plus the value of wherever you land next.
-
-Model of the environment is a function which predicts state transitions and rewards. Algorithms which use a model are called model-based methods, and those that don’t are called model-free. 
-
-Advantage of model-based: gains in sample efficiency
-Downside of model-based: a ground-truth model of the environment is usually not available to the agent, so it has to be learned from experience leaving room for bias in the model, which can be exploited by the agent
-
-
-Bellman Equation
-
-$$V^\pi (s) = R^\pi (s) + \gamma \sum_{s' \in S} P^\pi \left(s'|s\right) V^\pi \left(s'\right)$$
-
-
-Deep Q network
-
-
-Reinforcement Learning involves:
-- Optimisation
-- Delayed consequences (not in Supervised Learning)
-- Exploration (not in Supervised Learning)
-- Generalisation
-
-
-
-
-Model: mathematical model of dynamics and reward
-
-Value function: value of a state is the total amount of reward an agent can expect to accumulate over the future, starting from that state
-Model
-
-Policy $$\pi: S \rightarrow A$$ determines how the agent chooses actions from a given state
-
-Value function $$V^\pi$$ future rewards of being in a state and/or action and being under a particular policy $$\pi$$
-
-$$V^\pi \left(s_t = s\right) = E_\pi \left[r_t + \gamma r_{t+1} + \gamma^2 r_{t+2} + \ldots | s_t = s \right]$$
-
-Discount factor $$\gamma$$ weights immediate vs. future rewards
-
-$$\gamma = 0$$: only care about immediate reward
-
-$$\gamma = 1$$: future reward is as beneficial as immediate reward
-
-
-
-Evaluation: estimate/predict the expected rewards from following a given policy
-
-Control: optimisation: find the best policy
-
-Reward signal
-
-
-
-Model: given state and action, predicts next state and next reward
-
-Models are used for planning, by which we mean any way of deciding on a course of action by considering possible future situations before they are actually experienced.
-
-Model-based
-
-Model-free
-
-Actor Critic
-
-
-
-
-
-
-
-
-
 </section>
 
 <section markdown="1" style="background-image: url('/assets/images/streamline/common-file-text.svg');">
 # Models: Language Models
-
 
 </section>
 
@@ -856,128 +695,6 @@ Actor Critic
   - Cons: prone to overfitting
 - **Multiple Objective Optimisation (MOO)** combines results of different models with weightings; decouple models with different objectives for easier training, tweaking and maintenance
 
-</section>
-
-<section markdown="1" style="background-image: url('/assets/images/streamline/brain-1.svg');">
-# Misc
-
-Diffusion Models
-
-Txt2img
-Img2img
-
-Low-Rank Adaptation (LoRA) freezes pre-trained model weights and inject trainable layers (rank-decomposition matrices) in each transformer block.
-
-DreamBooth fine-tunes all the parameters in the diffusion model, keeping the text transformer frozen
-LoRA
-Variational Autoencoder (VAE): diffusion process operates in the autoencoder space instead of pixel space and the VAE takes the compressed results and turns them into full-size images.
-Text inversion (negative embeddings) enable image generation models to learn a new concept from just a few sample images by optimising a new word embedding token for each concept.
-
-LyCORIS
-
-Supervised Learning
-
-Classification
-
-Logistic regression
-
-Linear Models
-
-Support Vector Machines
-
-Nearest Neighbours
-
-Unsupervised Learning
-
-Reinforcement Learning
-
-Preprocessing
-
-Model Select and Evaluation
-
-Recommender Systems
-
-Collaborative filtering
-
-Deep Learning functions
-
-Recurrent Layers
-Recurrent Neural Network (RNN)
-Long short-term memory (LSTM) RNN
-Gated recurrent unit (GRU) RNN
-
-Transformer
-Encoder: stack of N encoder layers
-Decoder: stack of N decoder layers
-
-Distances: Euclidean, cosine, manhattan
-
-Representation learning
-- text
-  - statistical methods: bag of words, term frequency inverse document frequency (TF-IDF)
-  - machine learning: word2vec (continuous bag of words, skip-gram), transformer (BERT, GPT-4)
-ResNet uses CNN
-ViT uses Transformer
-
-Contrastive training trains models to distinguish between similar and dissimilar images.
-
-Torchvision datasets and tasks
-
-Nearest neighbours
-- Exact: searching the entire index for the item with the closest distance
-- Approximate
-  - Tree-based: form tree by iteratively adding new criteria to each node, algorithm only searches partition that the query belongs to
-  - Locality-sensitivity hashing (LSH): reduce the dimensions of the points and hash them into buckets, the hashing function maps close points to the same bucket
-  - Clustering-based, cluster points based on similarity and only search for points within the same cluster
-
-
-Object detection
-- One-stage network, YOLO, SSD
-- Two-stage networks, e.g. R-CNN, Fast R-CNN, Faster-RCNN
-  - Region proposal network (RPN): loss measures how aligned the predicted bounding boxes are with the ground truth bounding boxes.
-  - Classifier: use cross-entropy loss
-
-Postprocessing for images:
-- Non-maximal supression (NMS): select the most appropriate bounding box by ...
-
-Fusing methods to combine heterogeneous data:
-- late fusion: process different modalities independently, then combine their predictions to make a final predict
-  - pro: train, evaluate and improve each model independently
-  - con: need to separate training data for each modality, combination of modalities may be harmful even if each is benign in isolation
-- early fusion: modalities are combined first and then a prediction is made
-  - pro: only need to collect data for whole model
-  - con: most complex and requires more data
-
-Learning multiple tasks:
-- Individual binary classifier per class
-- Multi-label classifier
-- Multi-task classifier: shared layers and task-specific layers
-
-Pose Estimation
-
-
-
-Matrix factorisation decomposes the user-feedback matrix into user embeddings and item embeddings. Optimising algorithms include Stochastic Gradient Descent (SGD) and Weighted Alternating Least Squares (WALS), where one embedding is fixed and the other is optimised and these are swapped.
-- Pros: training/serving speed
-- Cons: doesn't utilise user/item features, cold-start problem
-
-Two-tower neural network
-Uses a user encoder and item encoder to create user and item embeddings:
-- Pros: utilises user/item features, cold-start problem
-- Cons: training/serving speed
-
-Feature crossing captures feature interactions by combining two or more existing features into a new feature by taking their product, sum or other combination
-
-Deep & Cross Network (DC) uses two parallel networks: deep network and cross network, which are concatenated to make a final prediction
-
-Factorisation machines is an embedding model which improves logistic regression by automatically including all pair-wise feature interactions
-
-DeepFM uses a DNN to capture higher-order features and an FM to capture low-level pair-wise feature interactions
-
-Graph neural networks (GNN):
-- graph-level prediction, e.g. given a chemical compound as a graph, predict whether it's an enzyme
-- node-level prediction, e.g. given a social network graph, predict whether a user (node) is a spammer
-- edge-level prediction, e.g. predict if an edge is present between two nodes, predict whether two users are likely to connect
 </section>
 
 [^data_checklist]: [Is My Data Any Good? A Pre-ML Checklist.](https://services.google.com/fh/files/blogs/data-prep-checklist-ml-bd-wp-v2.pdf)
