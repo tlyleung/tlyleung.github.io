@@ -13,7 +13,7 @@ image: /assets/images/authors/tlyleung.jpg
       </div>
       <div class="col">
         <p>👋 I’m Timothy and I live in sunny Singapore with my wife and three cats.</p>
-        <p>With over 8 years of experience building AI-driven products for innovative companies around the world, I’m eager to contribute my extensive skillset and collaborate with a cutting-edge team to build the next exciting AI product.</p>
+        <p>With over 8 years of experience building AI-driven products for innovative companies around the world, I’m excited to collaborate with cutting-edge teams to build the next groundbreaking AI product.</p>
         <p>You can find me on <a href="https://github.com/tlyleung">GitHub</a>, <a href="https://news.ycombinator.com/user?id=tlyleung">Hacker News</a> and <a href="https://linkedin.com/in/tlyl">LinkedIn</a>.</p>
       </div>
     </div>
@@ -24,13 +24,13 @@ image: /assets/images/authors/tlyleung.jpg
   <h1 class="fs-4">Skills</h1>
   <div class="row g-3">
     <div class="col-6 col-xxl-4">
-      Tabular Data
+      Latent Diffusion Models
       <div class="progress" style="height: 12px;">
-        <div class="progress-bar" role="progressbar" aria-label="Tabular Data" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar" role="progressbar" aria-label="Tabular Data" style="width: 75%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
     </div>
     <div class="col-6 col-xxl-4">
-      Language Models
+      Large Language Models
       <div class="progress" style="height: 12px;">
         <div class="progress-bar" role="progressbar" aria-label="Language Models" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
@@ -152,6 +152,7 @@ image: /assets/images/authors/tlyleung.jpg
 <section class="mb-5">
   <h1 class="fs-4">Prizes &amp; Certifications</h1>
   <ul>
+    <li>Obtained <span class="stars">50*</span> in Advent of Code 2023</li>
     <li>Kaggle Big Data Derby Analytics Competition (3<sup>rd</sup> place prize of US$10,000)</li>
     <li>AWS Certified Machine Learning Specialty</li>
     <li>Google Cloud Certified Professional Data Engineer</li>

@@ -362,3 +362,8 @@ blockquote {
   fill: $body-color;
   stroke: $body-color;
 }
+
+.stars {
+  color: #fcd65c;
+  text-shadow: 0 0 5px #fcd65c, 0 0 10px #fcd65c;
+}
