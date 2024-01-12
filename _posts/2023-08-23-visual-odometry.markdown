@@ -13,7 +13,7 @@ In this tutorial, we'll train an end-to-end Visual Odometry (VO) model using the
 
 # KITTI Dataset
 
-The KITTI dataset[^geiger12] stands as one of the most comprehensive benchmarking datasets for tasks relating to autonomous driving. Developed by the [Karlsruhe Institute of Technology](https://www.kit.edu) and [Toyota Technological Institute at Chicago](https://www.ttic.edu/), the dataset encompasses a wide range of data types and ground truth information necessary for many autonomous driving tasks, including stereo/flow, visual odometry/SLAM, 3D object detection, and 3D tracking, among others.
+The KITTI dataset[^geiger12] stands as one of the most comprehensive benchmarking datasets for tasks relating to autonomous driving. Developed by the Karlsruhe Institute of Technology and Toyota Technological Institute at Chicago, the dataset encompasses a wide range of data types and ground truth information necessary for many autonomous driving tasks, including stereo/flow, visual odometry/SLAM, 3D object detection, and 3D tracking, among others.
 
 The visual odometry subset is particularly significant for the development of VO algorithms because it provides 11 sequences with ground truth trajectories. These sequences were captured by high-resolution video cameras and a 3D Velodyne laser scanner and GPS localization system, mounted on a standard station wagon traversing through the German city of Karlsruhe.
 
@@ -559,7 +559,7 @@ An optical flow model is a type of vision algorithm used to estimate the motion 
 
 RAFT (Recurrent All-Pairs Field Transforms), is a more recent and advanced model for optical flow estimation that is included in Torchvision. While FlowNet uses a straightforward convolutional neural network (CNN), RAFT uses a recurrent neural network to iteratively refine its predictions over time.
 
-To learn more about optical flow and to explore RAFT in detail, see this PyTorch tutorial: [Optical Flow: Predicting movement with the RAFT model](https://pytorch.org/vision/stable/auto_examples/others/plot_optical_flow.html#sphx-glr-auto-examples-others-plot-optical-flow-py)
+To learn more about optical flow and to explore RAFT in detail, see this PyTorch tutorial: [Optical Flow: Predicting movement with the RAFT model](https://pytorch.org/vision/stable/auto_examples/others/plot_optical_flow.html)[^hug22]
 
 Within our own model, we have designed it to output an intermediate representation of the optical flow. This allows us to visually examine the flow patterns that RAFT detects and interprets.
 
@@ -744,5 +744,7 @@ Note: as the predicted trajectory progresses, the discrepancy from the actual gr
 # References
 
 [^geiger12]: [Geiger, A., Lenz, P. & Urtasun, R. (2012). Are we ready for Autonomous Driving? The KITTI Vision Benchmark Suite. Conference on Computer Vision and Pattern Recognition (CVPR).](https://www.cvlibs.net/datasets/kitti/index.php)
+
+[^hug22]: [Hug, N., Oke, A. & Vryniotis, V. (2022). Optical Flow: Predicting movement with the RAFT model. Torchvision documentation.](https://pytorch.org/vision/stable/auto_examples/others/plot_optical_flow.html)
 
 [^wang17]: [Wang, S., Clark, R., Wen, H. K., & Trigoni, N. (2017). DeepVO: Towards End-to-End Visual Odometry with Deep Recurrent Convolutional Neural Networks. International Conference on Robotics and Automation (ICRA).](https://arxiv.org/abs/1709.08429)

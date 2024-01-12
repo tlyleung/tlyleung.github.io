@@ -11,9 +11,9 @@ In this tutorial, we try and find the optimal racing line for a selection of AWS
 
 Our approach involves training a reinforcement learning agent in a car racing environment to achieve fast lap times, which we then transfer to the AWS DeepRacer tracks. To accomplish this task, we'll be leveraging a couple of key tools:
 
-- We'll utilize the `CarRacing` environment from [Gymnasium](https://gymnasium.farama.org/index.html), a suite of reinforcement learning environments, forked from the unmaintained [OpenAI Gym](https://github.com/openai/gym). The `CarRacing` environment models the vehicle as a powerful rear-wheel drive car and offers a realistic representation of car dynamics and track conditions, including ABS sensors and friction detectors. The environment provides both continuous and discrete action spaces, represents the race state as a zoomed-in, top-down color image and has a built-in reward function that rewards track tiles visited and penalises passing time. To simplify the model, we'll be using the discrete action space, which has 5 actions: do nothing (0), steer left (1), steer right(2), apply gas (3), and apply brakes (4).
+- We'll utilize the `CarRacing` environment from Gymnasium[^towers23], a suite of reinforcement learning environments, forked from the unmaintained OpenAI Gym[^brockman16]. The `CarRacing` environment models the vehicle as a powerful rear-wheel drive car and offers a realistic representation of car dynamics and track conditions, including ABS sensors and friction detectors. The environment provides both continuous and discrete action spaces, represents the race state as a zoomed-in, top-down color image and has a built-in reward function that rewards track tiles visited and penalises passing time. To simplify the model, we'll be using the discrete action space, which has 5 actions: do nothing (0), steer left (1), steer right(2), apply gas (3), and apply brakes (4).
 
-- For the machine learning model, we will employ the [Proximal Policy Optimization (PPO) algorithm](https://arxiv.org/abs/1707.06347) implemented in [Stable Baselines3 (SB3)](https://stable-baselines3.readthedocs.io/en/master/). PPO is a robust reinforcement learning algorithm from OpenAI and is one of two algorithms available for model training on AWS DeepRacer, alongside Soft Actor-Critic (SAC). We have chosen PPO for our project due to its compatibility with discrete space operations.
+- For the machine learning model, we will employ the Proximal Policy Optimization (PPO) algorithm[^schulman17] implemented in Stable Baselines3 (SB3)[^raffin21]. PPO is a robust reinforcement learning algorithm from OpenAI and is one of two algorithms available for model training on AWS DeepRacer, alongside Soft Actor-Critic (SAC). We have chosen PPO for our project due to its compatibility with discrete space operations.
 
 
 ```python
@@ -103,7 +103,7 @@ vec_env = VecFrameStack(vec_env, n_stack=4)
 vec_env = VecNormalize(vec_env, norm_obs=False, norm_reward=True)
 ```
 
-Next, we initialise the Proximal Policy Optimization (PPO) model using the Stable Baselines3 library. We use the recommended hyperparameters from the reinforcement learning training framework [RL Baselines3 Zoo](https://github.com/DLR-RM/rl-baselines3-zoo/blob/e4667b60f8dc5a753261770255951cef657770b1/hyperparams/ppo.yml#L350) and train the model for a total of 2,000,000 timesteps over all the environments.
+Next, we initialise the Proximal Policy Optimization (PPO) model using the Stable Baselines3 library. We use the recommended hyperparameters from the reinforcement learning training framework RL Baselines3 Zoo[^raffin20] and train the model for a total of 2,000,000 timesteps over all the environments.
 
 
 ```python
@@ -203,11 +203,6 @@ for i, row in enumerate(ax):
 plt.tight_layout()
 plt.show()
 ```
-
-    100%|█████████████████████████████████████████| 499/499 [01:10<00:00,  7.06it/s]
-
-
-
     
 ![png](/assets/images/deepracer/deepracer_17_1.png){: .multiply }
     
@@ -215,7 +210,7 @@ plt.show()
 
 # AWS DeepRacer Tracks
 
-With a trained model in hand, we can now turn to applying the model to AWS DeepRacer tracks. We need a way of loading the tracks, into the `CarRacing` environment. First, we download the [track waypoint files](https://github.com/aws-deepracer-community/deepracer-race-data/tree/main/raw_data/tracks), which each contain a NumPy array of shape (`num_waypoints`, 6), with the values in each row being: `center_x`, `center_y`, `inside_x`, `inside_y`, `outside_x`, `outside_y`. Then, we define a custom environment `DeepRacerEnv`, which inherits from the `CarRacing` class and override two methods to enable the `CarRacing` environment to process and interpret track data from AWS DeepRacer, which is stored in the `.npy` file format.
+With a trained model in hand, we can now turn to applying the model to AWS DeepRacer tracks. We need a way of loading the tracks, into the `CarRacing` environment. First, we download the track waypoint files[^aws23](https://github.com/aws-deepracer-community/deepracer-race-data/tree/main/raw_data/tracks), which each contain a NumPy array of shape (`num_waypoints`, 6), with the values in each row being: `center_x`, `center_y`, `inside_x`, `inside_y`, `outside_x`, `outside_y`. Then, we define a custom environment `DeepRacerEnv`, which inherits from the `CarRacing` class and override two methods to enable the `CarRacing` environment to process and interpret track data from AWS DeepRacer, which is stored in the `.npy` file format.
 
 
 ```python
@@ -407,18 +402,21 @@ plt.tight_layout()
 plt.show()
 ```
 
-    100%|███████████████████████████████████████| 1500/1500 [03:04<00:00,  8.15it/s]
-
-
-
-    
 ![png](/assets/images/deepracer/deepracer_26_1.png){: .multiply }
-    
 
 
 The result is a mixed bag. The performance on some tracks is satisfactory, but in others, the car seems to do a U-turn. This may be because when travelling fast around sharp corners, the car is prone to spinning out, and since it only relies on image input, resumes driving in whatever direction it's facing.
 
 # References
 
-- [Car Racing. (2023). Gymnasium Documentation. Farama Foundation.](https://gymnasium.farama.org/environments/box2d/car_racing/)
-- [PPO. (2023). Stable Baselines3 Documentation.](https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html)
+[^aws23]: [AWS DeepRacer Community Race Data Repository. (2023). Computer software.](https://github.com/aws-deepracer-community/deepracer-race-data)
+
+[^brockman16]: [Brockman, G., Cheung, V., Pettersson, L., Schneider, J., Schulman, J., Tang, J., & Zaremba, W. (2016). OpenAI Gym. Computer software.](https://github.com/openai/gym)
+
+[^raffin20]: [Raffin, A. (2020). RL Baselines3 Zoo. Computer software.](https://github.com/DLR-RM/rl-baselines3-zoo)
+
+[^raffin21]: [Raffin, A., Hill, A., Gleave, A., Kanervisto, A., Ernestus, M., & Dormann, N. (2021). Stable-Baselines3: Reliable Reinforcement Learning Implementations. Computer Software.](https://github.com/DLR-RM/stable-baselines3)
+
+[^schulman17]: [Schulman, J., Wolski, F., Dhariwal, P., Radford, A., & Klimov, O. (2017). Proximal Policy Optimization Algorithms. OpenAI.](https://arxiv.org/abs/1707.06347)
+
+[^towers23]: [Towers, M., Terry, J. K., Kwiatkowski, A., Balis, J. U., de Cola, G., Deleu, T., Goulão, M., Kallinteris, A., KG, A., Krimmel, M., Perez-Vicente, R., Pierré, A., Schulhoff, S., Tai, J. J., Tan, A. J. S., & Younis, O. G. (2023). Gymnasium. Computer software.](https://github.com/Farama-Foundation/Gymnasium)

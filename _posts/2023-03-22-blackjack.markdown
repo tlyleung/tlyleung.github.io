@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Deriving Blackjack’s Basic Strategy
-description: Using tabular solution methods from reinforcement learning to derive Blackjack’s basic strategy.
+title: Deriving Blackjack’s Basic Strategy using Reinforcement Learning
+description: Tabular solution methods from reinforcement learning are used to derive Blackjack’s basic strategy.
 image: /assets/images/blackjack/splash.png
 authors: [tlyleung]
 permalink: blackjack
@@ -932,18 +932,18 @@ Due to the observation space being so large, even after running Monte Carlo with
 
 # References
 
-[^baldwin56]: Baldwin, R. R., Cantey, W. E., Maisel, H., & McDermott, J. P. (1956). [The Optimum Strategy in Blackjack.](https://web.williams.edu/Mathematics/sjmiller/public_html/341Fa09/handouts/Baldwin_OptimalStrategyBlackjack.pdf) Journal of the American Statistical Association.
+[^baldwin56]: [Baldwin, R. R., Cantey, W. E., Maisel, H., & McDermott, J. P. (1956). The Optimum Strategy in Blackjack. Journal of the American Statistical Association.](https://web.williams.edu/Mathematics/sjmiller/public_html/341Fa09/handouts/Baldwin_OptimalStrategyBlackjack.pdf)
 
-[^qfit23]: QFIT. (2023). [Casino Vérité Blackjack Simulator.](https://www.qfit.com/blackjack-simulator.htm) Computer software.
+[^qfit23]: [QFIT. (2023). Casino Vérité Blackjack Simulator. Computer software.](https://www.qfit.com/blackjack-simulator.htm)
 
-[^shackleford10]: Shackleford, M. (2010). [Blackjack Basic Strategy Calculator.](https://wizardofodds.com/games/blackjack/strategy/calculator/) Wizard of Odds.
+[^shackleford10]: [Shackleford, M. (2010). Blackjack Basic Strategy Calculator. Wizard of Odds.](https://wizardofodds.com/games/blackjack/strategy/calculator/)
 
-[^silver15]: Silver, D. (2015). [Reinforcement Learning Assignment: Easy21.](https://www.davidsilver.uk/wp-content/uploads/2020/03/Easy21-Johannes.pdf) Lectures on Reinforcement Learning.
+[^silver15]: [Silver, D. (2015). Reinforcement Learning Assignment: Easy21. Lectures on Reinforcement Learning.](https://www.davidsilver.uk/wp-content/uploads/2020/03/Easy21-Johannes.pdf)
 
-[^sutton20]: Sutton, R. S. & Barto, A. G. (2020) [Reinforcement Learning: An Introduction. Second edition.](http://incompleteideas.net/book/the-book-2nd.html) MIT Press.
+[^sutton20]: [Sutton, R. S. & Barto, A. G. (2020) Reinforcement Learning: An Introduction. Second edition. MIT Press.](http://incompleteideas.net/book/the-book-2nd.html)
 
-[^thorp66]: Thorp, E. (1966). Beat the Dealer: A Winning Strategy for the Game of Twenty-One.
+[^thorp66]: [Thorp, E. (1966). Beat the Dealer: A Winning Strategy for the Game of Twenty-One.](http://www.edwardothorp.com/books/beat-the-dealer/)
 
-[^towers23]: Towers, M., Terry, J. K., Kwiatkowski, A., Balis, J. U., de Cola, G., Deleu, T., Goulão, M., Kallinteris, A., KG, A., Krimmel, M., Perez-Vicente, R., Pierré, A., Schulhoff, S., Tai, J. J., Tan, A. J. S., & Younis, O. G. (2023). [Gymnasium: Blackjack Environment.](https://github.com/Farama-Foundation/Gymnasium/blob/main/gymnasium/envs/toy_text/blackjack.py) Computer software.
+[^towers23]: [Towers, M., Terry, J. K., Kwiatkowski, A., Balis, J. U., de Cola, G., Deleu, T., Goulão, M., Kallinteris, A., KG, A., Krimmel, M., Perez-Vicente, R., Pierré, A., Schulhoff, S., Tai, J. J., Tan, A. J. S., & Younis, O. G. (2023). Gymnasium. Computer software.](https://github.com/Farama-Foundation/Gymnasium)
 
-[^zemann22]: Zemann, T. (2022). [Solving Blackjack with Q-Learning.](https://gymnasium.farama.org/tutorials/training_agents/blackjack_tutorial/) Gymnasium Documentation.
+[^zemann22]: [Zemann, T. (2022). Solving Blackjack with Q-Learning. Gymnasium documentation.](https://gymnasium.farama.org/tutorials/training_agents/blackjack_tutorial/)

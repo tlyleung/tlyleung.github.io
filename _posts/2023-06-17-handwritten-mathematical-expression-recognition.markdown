@@ -9,11 +9,11 @@ permalink: handwritten-mathematical-expression-recognition
 
 In this tutorial, we'll be building a transformer-based model for Handwritten Mathematical Expression Recognition (HMER). While the output of the model is LaTeX text, the input is a set of images rendered from stroke data making this an offline task. The online variation of this task would see us directly using the stroke data, which in addition to coordinates, can include useful attributes like pen pressure and timestamp data.
 
-Although this task dates back to the 1960s, the first Competition on Recognition of Online Handwritten Mathematical Expressions (CROHME) was held at the International Conference on Document Analysis and Recognition (ICDAR) in 2011. Since then it has been run many times, most recently in 2023. We'll be using the [CROHME 2023 dataset](https://crohme2023.ltu-ai.dev/data-tools/) to train this model.
+Although this task dates back to the 1960s, the first Competition on Recognition of Online Handwritten Mathematical Expressions (CROHME) was held at the International Conference on Document Analysis and Recognition (ICDAR) in 2011. Since then it has been run many times, most recently in 2023. We'll be using the CROHME 2023 dataset[^xie23] to train this model.
 
 # Tokenization
 
-Tokenization is an important first step in making the LaTeX text interpretable by a Machine Learning model. Instead of using [Hugging Face Tokenizers](https://huggingface.co/docs/tokenizers/index), a powerful library that includes tokenization algorithms such as Byte-Pair Encoding (BPE) and WordPiece, we'll build our own basic tokeniser, `LaTeXTokenizer`, from scratch so that we can peer into how tokenization, vocabulary building, and encoding/decoding work.
+Tokenization is an important first step in making the LaTeX text interpretable by a Machine Learning model. Instead of using Hugging Face Tokenizers[^moi23], a powerful library that includes tokenization algorithms such as Byte-Pair Encoding (BPE) and WordPiece, we'll build our own basic tokeniser, `LaTeXTokenizer`, from scratch so that we can peer into how tokenization, vocabulary building, and encoding/decoding work.
 
 
 ```python
@@ -859,5 +859,9 @@ We note the following discrepancies:
 In practice, we would normally use an evaluation metric such as edit distance or BLEU score rather than manual inspection.
 
 # References
+
+[^moi23]: [Moi, A., & Patry, N. (2023). HuggingFace's Tokenizers. Computer software.](https://github.com/huggingface/tokenizers)
+
+[^xie23]: [Xie, Y., et al. (2023). ICDAR 2023 CROHME: Competition on Recognition of Handwritten Mathematical Expressions. *ICDAR 2023.*](https://crohme2023.ltu-ai.dev/data-tools/)
 
 [^zhao21]: [Zhao, W. Q., Gao, L.C., Yan, Z. Y., Du, L. & Zhang, Z.Y. (2021). Handwritten Mathematical Expression Recognition with Bidirectionally Trained Transformer. *ICDAR 2021.*](https://arxiv.org/abs/2105.02412)
