@@ -7,6 +7,9 @@ $body-bg: #fefef4;
 
 $code-color: #212529;
 
+$table-striped-bg-factor: .1;
+$table-striped-bg: rgba(150, 130, 100, $table-striped-bg-factor);
+
 $container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -20,6 +23,9 @@ $font-family-sans-serif: 'Hanken Grotesk', sans-serif;
 
 $card-border-radius: 0;
 $card-border-color: transparent;
+
+$progress-bg: #f3f1e5;
+$progress-bar-bg: #e7e3cb;
 
 @import "bootstrap/bootstrap";
 
