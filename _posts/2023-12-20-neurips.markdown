@@ -1,0 +1,480 @@
+---
+layout: post
+title: NeurIPS 2023
+description: New Orleans LA
+image: /assets/images/neurips-2023/splash.png
+authors: [tlyleung]
+permalink: neurips-2023
+---
+
+<style type="text/css">
+a:link    { color: inherit; text-decoration: none;      } 
+a:visited { color: inherit; text-decoration: none;      } 
+a:hover   { color: inherit; text-decoration: underline; } 
+a:active  { color: inherit; text-decoration: underline; } 
+</style>
+
+# NeurIPS in Numbers
+
+- 3,218 main track papers
+- 3,116 workshop papers
+- 21,582 authors
+- 15,760 participants
+
+### Institution by Main Track Paper Count
+
+<div class="container mb-3 px-0">
+    <div class="row">
+        <div class="col-12 col-md-6"><div>                            <div id="b23ed17d-4a8e-4276-922d-6a2c9dbd5bb3" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("b23ed17d-4a8e-4276-922d-6a2c9dbd5bb3")) {                    Plotly.newPlot(                        "b23ed17d-4a8e-4276-922d-6a2c9dbd5bb3",                        [{"alignmentgroup":"True","hovertemplate":"Institution: %{customdata}\u003cbr\u003ePosters with %{fullData.name}: %{x}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"First Author","marker":{"color":"#d7d6cc","pattern":{"shape":""}},"name":"First Author","offsetgroup":"First Author","orientation":"h","showlegend":true,"textposition":"auto","x":[5,11,12,15,16,12,5,27,19,109],"xaxis":"x","y":["Bytedance","Nvidia","Huawei","Alibaba","Amazon","IBM","Tencent","Meta","Microsoft","Google"],"yaxis":"y","type":"bar","customdata":["Bytedance","Nvidia","Huawei","Alibaba","Amazon","IBM","Tencent","Meta","Microsoft","Google"]},{"alignmentgroup":"True","hovertemplate":"Institution: %{customdata}\u003cbr\u003ePosters with %{fullData.name}: %{x}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Contributing Authors","marker":{"color":"#f3f1e5","pattern":{"shape":""}},"name":"Contributing Authors","offsetgroup":"Contributing Authors","orientation":"h","showlegend":true,"textposition":"auto","x":[22,26,42,43,48,53,60,62,115,215],"xaxis":"x","y":["Bytedance","Nvidia","Huawei","Alibaba","Amazon","IBM","Tencent","Meta","Microsoft","Google"],"yaxis":"y","type":"bar","customdata":["Bytedance","Nvidia","Huawei","Alibaba","Amazon","IBM","Tencent","Meta","Microsoft","Google"]}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{},"range":[0,350],"showline":false,"gridwidth":2,"gridcolor":"#f3f1e5","zerolinecolor":"#f3f1e5"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{}},"legend":{"title":{},"tracegroupgap":0,"x":1,"xanchor":"right","y":0.1,"yanchor":"middle"},"title":{"text":"Company by Main Track Paper Count","font":{"size":16},"x":0},"barmode":"stack","margin":{"l":0,"r":0,"t":50,"b":0},"font":{"family":"Hanken Grotesk","size":16},"paper_bgcolor":"#fefef4","plot_bgcolor":"#fefef4","showlegend":true},                        {"displayModeBar": false, "responsive": true}                    )                };                            </script>        </div></div>
+        <div class="col-12 col-md-6"><div>                            <div id="ae749246-56fd-4ef6-b6b0-35b79d7836b4" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("ae749246-56fd-4ef6-b6b0-35b79d7836b4")) {                    Plotly.newPlot(                        "ae749246-56fd-4ef6-b6b0-35b79d7836b4",                        [{"alignmentgroup":"True","hovertemplate":"Institution: %{customdata}\u003cbr\u003ePosters with %{fullData.name}: %{x}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"First Author","marker":{"color":"#d7d6cc","pattern":{"shape":""}},"name":"First Author","offsetgroup":"First Author","orientation":"h","showlegend":true,"textposition":"auto","x":[44,52,60,75,63,76,85,79,103,99],"xaxis":"x","y":["UW","NUS","SJTU","PKU","UC Berkeley","HKU","CMU","Tsinghua","Stanford","MIT"],"yaxis":"y","type":"bar","customdata":["University of Washington","National University of Singapore","Shanghai Jiao Tong University","Peking University","University of California, Berkeley","University of Hong Kong","Carnegie Mellon University","Tsinghua University","Stanford University","Massachusetts Institute of Technology"]},{"alignmentgroup":"True","hovertemplate":"Institution: %{customdata}\u003cbr\u003ePosters with %{fullData.name}: %{x}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Contributing Authors","marker":{"color":"#f3f1e5","pattern":{"shape":""}},"name":"Contributing Authors","offsetgroup":"Contributing Authors","orientation":"h","showlegend":true,"textposition":"auto","x":[63,55,50,60,89,83,94,114,99,111],"xaxis":"x","y":["UW","NUS","SJTU","PKU","UC Berkeley","HKU","CMU","Tsinghua","Stanford","MIT"],"yaxis":"y","type":"bar","customdata":["University of Washington","National University of Singapore","Shanghai Jiao Tong University","Peking University","University of California, Berkeley","University of Hong Kong","Carnegie Mellon University","Tsinghua University","Stanford University","Massachusetts Institute of Technology"]}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{},"range":[0,350],"showline":false,"gridwidth":2,"gridcolor":"#f3f1e5","zerolinecolor":"#f3f1e5"},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{}},"legend":{"title":{},"tracegroupgap":0,"x":1,"xanchor":"right","y":0.1,"yanchor":"middle"},"title":{"text":"University by Main Track Paper Poster Count","font":{"size":16},"x":0},"barmode":"stack","margin":{"l":0,"r":0,"t":50,"b":0},"font":{"family":"Hanken Grotesk","size":16},"paper_bgcolor":"#fefef4","plot_bgcolor":"#fefef4","showlegend":false},                        {"displayModeBar": false, "responsive": true}                    )                };                            </script>        </div></div>
+    </div>
+</div>
+
+
+# Awards
+
+## Test of Time
+
+### [Distributed Representations of Words and Phrases and their Compositionality](https://arxiv.org/abs/1301.3781) by Tomas Mikolov et al.
+
+The authors reflect on learnings from the decade-old Word2Vec paper to see if they hold true today: semi-supervised learning is key to language understanding (true); tokenization solves nuanced problems (true); treating language as sequences of dense vectors is powerful (true).
+
+## Outstanding Main Track Papers
+
+### [Are Emergent Abilities of Large Language Models a Mirage?](https://arxiv.org/abs/2304.15004) by [Rylan Schaeffer](https://twitter.com/RylanSchaeffer) et al.
+
+Large language models' emergent abilities may actually be a result of metric choices. Particularly, smooth, continuous, predictable changes in model performance, as scale increases, can appear sharp and unpredictable if the researcher chooses a non-linear or discontinuous metric.
+
+### [Privacy Auditing with One (1) Training Run](https://arxiv.org/abs/2305.08846) by [Thomas Steinke](https://twitter.com/shortstein) et al.
+
+Privacy auditing usually estimates lower bounds on differential privacy algorithms by training on datasets differing by one record many times. Instead, training once, we use coin flips to randomly include/exclude data and infer the bounds by guessing what data was included.
+
+## Outstanding Main Track Runner-Ups
+
+### [Scaling Data-Constrained Language Models](https://arxiv.org/abs/2305.16264) by [Niklas Muennighoff](https://twitter.com/Muennighoff) et al.
+
+Scaling large language models is data-constrained (papers and books are estimated to be exhausted by 2024). Several strategies can help: repeat data for ~4 epochs for large language models, fill ~60% of the data budget with Python code and reduce the use of perplexity filters.
+
+### [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290) by [Rafael Rafailov](https://twitter.com/rm_rafailov) et al.
+
+Direct Preference Optimization is a method to fine tune language models from human feedback without reinforcement learning, which can be complex and unstable. A mapping between reward functions and optimal policies can reduce this to a classification problem on human preferences.
+
+## Outstanding Datasets and Benchmark Track Papers
+
+### [ClimSim: A large multi-scale dataset for hybrid physics-ML climate emulation](https://arxiv.org/abs/2306.08754) by [Sungduk Yu](https://twitter.com/SungdukYu) et al.
+
+The ClimSim dataset encourages the development of ~1-km scale climate models using hybrid ML-physics techniques. It consists of 5.7B pairs of multivariate inputs (local climate states) and targets (cloud formation processes) generated by the E3SM-MMF climate simulator.
+
+### [DecodingTrust: A Comprehensive Assessment of Trustworthiness in GPT Models](https://arxiv.org/abs/2306.11698) by [Boxin Wang](https://twitter.com/wbx_life) et al.
+
+DecodingTrust is a trustworthiness evaluation for large language models and includes benchmarks from 8 perspectives: toxicity, stereotypes, adversarial robustness, out-of-distribution robustness, robustness on adversarial demonstrations, privacy, machine ethics, and fairness.
+
+# Invited Talks
+
+### [NextGenAI: The Delusion of Scaling and the Future of Generative AI](https://nips.cc/virtual/2023/invited-talk/73988) by Björn Ommer
+
+The co-author of the Stable Diffusion paper talks about the scaling limits and the need for improved compute and data efficiency. The future of generative models lie in combining different architectures and using retrieval augmentation to offload detail from the main model.
+
+### [The Many Faces of Responsible AI](https://nips.cc/virtual/2023/invited-talk/73993) by [Lora Aroyo](https://twitter.com/laroyo)
+
+Rater disagreement is an important signal caused by content ambiguity and raters' diverse perspectives. Human annotation should be allowed to capture the natural variance and bias in the problem and model quality metrics should reflect this.
+
+### [Coherence statistics, self-generated experience and why young humans are much smarter than current AI.](https://nips.cc/virtual/2023/invited-talk/73992) by Linda Smith
+
+How do babies rapidly learn across many domains from sparse data? They control the input by moving their heads (short-term), form episodes of connected experience at task time (medium-term) and change the curriculum according to developmental time (long-term).
+
+### [Sketching: core tools, learning-augmentation, and adaptive robustness](https://nips.cc/virtual/2023/invited-talk/73987) by [Jelani Nelson](https://twitter.com/minilek)
+
+A sketch is a compressed representation of a dataset still useful for downstream tasks. This talk discusses some core sketching tools (CountSketch, Random Projections and Matrix Sketching) as well more recent advancements such as learning-augmentation and adaptive robustness.
+
+### [Beyond Scaling Panel](https://nips.cc/virtual/2023/invited-talk/73994) with [Alexander Rush](https://twitter.com/srush_nlp), [Aakanksha Chowdhery](https://twitter.com/achowdhery), Angela Fan, [Percy Liang](https://twitter.com/percyliang)
+
+Aakanksha Chowdhery (trained PaLM at Google), Angela Fan (trained Llama-2 at Meta) and Percy Liang (Associate Professor at Stanford) sit down to discuss a range of topics including Architectures/Engineering, Data/Alignment, Evaluation/Transparency and Creators/Contributors.
+
+### [Systems for Foundation Models, and Foundation Models for Systems](https://nips.cc/virtual/2023/invited-talk/73990) by Christopher Ré
+
+This talk looks at new ways of efficiently building foundation models. Inspired by database research, Flash Attention reduces the IO cost by processing multiple query blocks at a time. Beyond the Transformer, architectures based on signal processing, like S4, show promise.
+
+### [Online Reinforcement Learning in Digital Health Interventions](https://nips.cc/virtual/2023/invited-talk/73989) by [Susan Murphy](https://twitter.com/SusanMurphylab1)
+
+HeartSteps is a physical activity coach with an activity suggester. Through different iterations of HeartSteps, various challenges of online reinforcement learning are addressed including actions that operate on different timescales, and learning while modifying the algorithm. 
+
+# Oral Sessions
+
+## Reinforcement Learning
+
+### Ordering-based Conditions for Global Convergence of Policy Gradient Methods by Jincheng Mei et al.
+
+Softmax Policy Gradient and Natural Policy Gradient can achieve global convergence with non-zero approximation errors. Non-zero approximation errors does not characterize global convergence for the algorithms. Linear realizability does not imply global convergence for Softmax PG.
+
+### [When Demonstrations meet Generative World Models: A Maximum Likelihood Framework for Offline Inverse Reinforcement Learning](https://arxiv.org/abs/2302.07457) by Siliang Zeng et al.
+
+Offline inverse reinforcement learning aims to recover the structure of rewards and environment dynamics that underlie observed actions in a fixed, finite set of demonstrations from an expert agent. A bi-level optimization formulation of the reward estimation task is proposed.
+
+### [Online RL in Linearly $$q^\pi$$-Realizable MDPs Is as Easy as in Linear MDPs If You Learn What to Ignore](https://arxiv.org/abs/2310.07811) by [Gellert Weisz](https://twitter.com/gellertweisz) et al. 
+
+The difference between linearly $$q^\pi$$-realizable and linear MDPs is characterized: the former may have "zero-range" states. An algorithm is derived that solves $$q^\pi$$-realizable MDPs using samples that are bounded by polynomial parameters.
+
+### [When Do Transformers Shine in RL? Decoupling Memory from Credit Assignment](https://arxiv.org/abs/2307.03864) by [Tianwei Ni](https://twitter.com/twni2016) et al.
+
+Reinforcement learning algorithms need to learn memory and credit assignment, both of which involve modeling long-term dependencies, a task which suits Transformers. Empirical results suggest that Transformers improves memory but not credit assignment.
+
+### [Bridging RL Theory and Practice with the Effective Horizon](https://arxiv.org/abs/2304.09853) by [Cassidy Laidlaw](https://twitter.com/cassidy_laidlaw) et al.
+
+BRIDGE, a new dataset for developing practical bounds for deep learning MDPs, leads to the Effective Horizon measure, correlating deep reinforcement learning success with the optimality of greedy actions under random policy Q functions.
+
+### [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290) by [Rafael Rafailov](https://twitter.com/rm_rafailov) et al. 🥈
+
+Direct Preference Optimization is a method to fine tune language models from human feedback without reinforcement learning, which can be complex and unstable. A mapping between reward functions and optimal policies can reduce this to a classification problem on human preferences.
+
+### [MetaBox: A Benchmark Platform for Meta-Black-Box Optimization with Reinforcement Learning](https://arxiv.org/abs/2310.08252) by Zeyuan Ma et al.
+
+MetaBox, a new benchmark platform, facilitates the development and evaluation of MetaBBO-RL methods, which use meta-level reinforcement learning to reduce the need for manual fine-tuning of low-level black-box optimizers.
+
+## Datasets & Benchmarks
+
+### [LeanDojo: Theorem Proving with Retrieval-Augmented Language Models](https://arxiv.org/abs/2306.15626) by [Kaiyu Yang](https://twitter.com/KaiyuYang4) et al.
+
+LeanDojo is an open-source playground for Lean, a proof assistant. The playground includes ReProver, an LLM-based prover augmented with premises retrieved from a vast math library, and a benchmark consisting of 98,734 theorems and proofs extracted from Lean's math library.
+
+### [OpenAssistant Conversations --- Democratizing Large Language Model Alignment](https://arxiv.org/abs/2304.07327) by [Andreas Köpf](https://twitter.com/neurosp1ke) et al.
+
+OpenAssistant Conversations is a human-generated, human-annotated assistant-style conversation corpus consisting of 161,443 messages in 35 different languages, annotated with 461,292 quality ratings, resulting in over 10,000 complete and fully annotated conversation trees. This dataset aims to democratize research on large-scale alignment.
+
+### [DecodingTrust: A Comprehensive Assessment of Trustworthiness in GPT Models](https://arxiv.org/abs/2306.11698) by [Boxin Wang](https://twitter.com/wbx_life) et al. 🥇
+
+DecodingTrust is a trustworthiness evaluation for large language models and includes benchmarks from 8 perspectives: toxicity, stereotypes, adversarial robustness, out-of-distribution robustness, robustness on adversarial demonstrations, privacy, machine ethics, and fairness.
+
+## Tractable Models
+
+### [How to Turn Your Knowledge Graph Embeddings into Generative Models](https://arxiv.org/abs/2305.15944) by [Lorenzo Loconte](https://twitter.com/loreloc_) et al.
+
+Knowledge graph embedding (KGE) models have issues with prediction confidence measurement, constraint satisfaction guarantees and entity scaling. To address this, KGEs can be turned into generative models called GeKCs through the use of probabilistic circuits.
+
+### Exact Bayesian Inference on Discrete Models via Probability Generating Functions: A Probabilistic Programming Approach by [Fabian Zaiser](https://twitter.com/fabian_zaiser) et al.
+
+Exact bayesian inference is possible for a large class of discrete models. Genfer takes a probabilistic program and by translating it to a probability generating function, makes it possible to extract the posterior probability masses and moments using automatic differentiation.
+
+### [Characteristic Circuits](https://arxiv.org/abs/2312.07790) by Zhongjie Yu et al.
+
+Characteristic circuits are a family of tractable probabilistic models, providing a unified formalization of distributions over heterogeneous data in the spectral domain, that facilitate efficient probabilistic inference even when no closed-form density function is available.
+
+## Deep Learning Theory
+
+### [Sharpness Minimization Algorithms Do Not Only Minimize Sharpness To Achieve Better Generalization](https://arxiv.org/abs/2307.11007) by [Kaiyue Wen](https://twitter.com/wen_kaiyue) at al.
+
+A reason for why over-parameterized neural networks can generalize may be because of minimizer flatness. Non-generalizing flattest models are found implying that the reason lies elsewhere.
+
+### [Abide by the Law and Follow the Flow: Conservation Laws for Gradient Flows](https://arxiv.org/abs/2307.00144) by [Sibylle Marcotte](https://twitter.com/SibylleMarcotte) et al.
+
+Some properties of optimization initialization are retained by trained over-parameterized models. This paper defines how these quantities are conserved, and provides algorithms on computing the maximal number of independent conservation laws.
+
+### [A U-turn on Double Descent: Rethinking Parameter Counting in Statistical Learning](https://arxiv.org/abs/2310.18988) by [Alicia Curth](https://twitter.com/AliciaCurth) et al.
+
+The relationship between model complexity and prediction error (assumed to be U-shaped) needs revision after the success of over-parametrized neural networks. An additional regime where a second descent in test error occurs seems to be present in non-neural network models also.
+
+## Efficiency Learning
+
+### [Monarch Mixer: A Simple Sub-Quadratic GEMM-Based Architecture](https://arxiv.org/abs/2310.12109) by [Dan Fu](https://twitter.com/realDanFu) et al.
+
+Monarch Mixer (M2) is a new architecture that can scale sub-quadratically along sequence length and model dimension. M2 is applied to three domains: non-causal BERT-style language modeling, ViT-style image classification, and causal GPT-style language modeling.
+
+### [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314) by [Tim Dettmers](https://twitter.com/Tim_Dettmers) et al.
+
+QLoRA is a finetuning approach that reduces memory usage by backpropagating gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA). It introduces several innovations: 4-bit NormalFloat, Double Quantization and Paged Optimizers.
+
+### [Scaling Data-Constrained Language Models](https://arxiv.org/abs/2305.16264) by [Niklas Muennighoff](https://twitter.com/Muennighoff) et al. 🥈
+
+Scaling large language models is data-constrained (papers and books are estimated to be exhausted by 2024). Several strategies can help: repeat data for ~4 epochs for large language models, fill ~60% of the data budget with Python code and reduce the use of perplexity filters.
+
+### [Bridging Discrete and Backpropagation: Straight-Through and Beyond](https://arxiv.org/abs/2304.08612) by [Liyuan Liu](https://twitter.com/LiyuanLucas) et al.
+
+Backpropagation is limited to computing gradients for continuous variables. A novel approach approximates the gradient of parameters involved in generating discrete latent variables.
+
+## Objects / Neuroscience / Vision
+
+### [Rotating Features for Object Discovery](https://arxiv.org/abs/2306.00600) by [Sindy Löwe](https://twitter.com/sindy_loewe) et al.
+
+The binding problem concerns how the brain represents and connects objects within a fixed network of neural connections. An alternative to discrete slot-based methods is Rotating Features, an approach that learns continuous and distributed object-centric representations.
+
+### [Linguistic Binding in Diffusion Models: Enhancing Attribute Correspondence through Attention Map Alignment](https://arxiv.org/abs/2306.08877) by [Royi Rassin](https://twitter.com/RoyiRassin) et al.
+
+Text-conditioned image generation models often incorrectly associate entities and their visual attributes. SynGen is an approach that syntactically analyses the prompt and uses a novel loss function that encourages cross-attention maps to agree with linguistic bindings.
+
+### [Additive Decoders for Latent Variables Identification and Cartesian-Product Extrapolation](https://arxiv.org/abs/2307.02598) by [Sébastien Lachapelle](https://twitter.com/seblachap) et al.
+
+Additive decoders, suitable for decomposing images into object-specific elements, enable precise latent variable identification and innovative image generation, with minimal assumptions on latent factor distribution.
+
+### [Emergence of Shape Bias in Convolutional Neural Networks through Activation Sparsity](https://arxiv.org/abs/2310.18894) by Tianqin Li et al. 
+
+Deep learning models for object recognition are biased towards texture, while human visual systems are biased towards shape. Enforcing a sparse coding constraint using a non-differential top-k operation can introduce shape bias into the network.
+
+## Causality
+
+### [Learning Linear Causal Representations from Interventions under General Nonlinear Mixing](https://arxiv.org/abs/2306.02235) by Simon Buchholz et al.
+
+Causal representations can be learnt from unknown, latent interventions in a general setting (Gaussian latent distribution but general mixing function) given unknown single-node interventions.
+
+### [A Measure-Theoretic Axiomatisation of Causality](https://arxiv.org/abs/2305.17139) by Junhyung Park et al.
+
+Kolmogorov's measure-theoretic axiomatisation of probability is a good starting point towards an axiomatisation of causality.
+
+### [Conformal Meta-learners for Predictive Inference of Individual Treatment Effects](https://arxiv.org/abs/2308.14895) by [Ahmed Alaa](https://twitter.com/_ahmedmalaa) et al.
+
+Conformal meta-learners is a general framework for issuing predictive intervals for individual treatment effects (ITEs) in machine learning by applying the standard conformal prediction (CP) procedure on top of conditional average treatment effect (CATE) meta-learners.
+
+### [Causal Normalizing Flows: From Theory to Practice](https://arxiv.org/abs/2306.05415) by [Adrián Javaloy](https://twitter.com/javaloyML) et al.
+
+Causal normalizing flows is shown to capture the underlying causal data-generating process using non-linear ICA.
+
+## Privacy
+
+### Nearly Tight Bounds For Differentially Private Multiway Cut by Mina Dalirrooyfard et al.
+
+The min $$s$$-$$t$$ cuts problem involves removing the smallest number of graph edges so two terminals are disconnected. Tight bounds are given for this problem's differential privacy and a differentially private algorithm for the multiway $k$-cut problem is presented.
+
+### [Privacy Auditing with One (1) Training Run](https://arxiv.org/abs/2305.08846) by [Thomas Steinke](https://twitter.com/shortstein) et al. 🥇
+
+Privacy auditing usually estimates lower bounds on differential privacy algorithms by training on datasets differing by one record many times. Instead, training once, we use coin flips to randomly include/exclude data and infer the bounds by guessing what data was included.
+
+### [Private Everlasting Prediction](https://arxiv.org/abs/2305.09579) by Moni Naor et al.
+
+Private everlasting prediction, which protects the privacy of both the training set and ongoing queries, works for all concept classes with finite VC dimension.
+
+### User-Level Differential Privacy With Few Examples Per User by Badih Ghazi et al.
+
+The example-scarce regime (each user has only a few examples) can be handled for approximate-DP using a generic transformation of any item-level DP algorithm to a user-level algorithm, while for pure-DP, a technique can adapt the exponential mechanism to the user-level setting.
+
+## Neuro
+
+### [Brain Diffusion for Visual Exploration: Cortical Discovery using Large Scale Generative Models](https://arxiv.org/abs/2306.03089) by Andrew Luo at al.
+
+Brain Diffusion for Visual Exploration (BrainDiVE) attempts to synthesize images predicted to activate a given brain region using paired natural images and fMRI recordings, by combining large-scale diffusion models with brain-guided image synthesis.
+
+### [Cinematic Mindscapes: High-quality Video Reconstruction from Brain Activity](https://arxiv.org/abs/2305.11675) by Zijiao Chen et al.
+
+Mind-Video attempts to reconstruct human vision from fMRI brain data. It does this using masked brain modeling, mult-imodal contrastive learning with spatio-temporal attention, and co-training with an augmented Stable Diffusion model incorporating network temporal inflation.
+
+### [Human-like Few-Shot Learning via Bayesian Reasoning over Natural Language](https://arxiv.org/abs/2306.02797) by Kevin Ellis
+
+An inductive learning model that can efficiently learn a broad range of concepts like a human can be implemented as a Bayesian reasoning process, where a language model proposes candidate hypotheses in natural language, which are then re-weighed by a prior and a likelihood.
+
+## NLP/Tools
+
+### [ToolkenGPT: Augmenting Frozen Language Models with Massive Tools via Tool Embeddings](https://arxiv.org/abs/2305.11554) by Shibo Hao et al.
+
+Instead of requiring fine-tuning or prompting, ToolkenGPT learns to master tools as predicting tokens through tool embeddings for solving complex tasks. Each tool is transformed into vector embeddings and enters a special function mode when triggered during text generation.
+
+### [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) by [Timo Schick](https://twitter.com/timo_schick) et al.
+
+Toolformer is a language model trained to decide which APIs to call, when to call them with what arguments, and how to use the results when predicting future tokens. A range of tools are included: a calculator, a Q&A system, a search engine, a translation system, and a calendar.
+
+### [Learning Transformer Programs](https://arxiv.org/abs/2306.01128) by [Dan Friedman](https://twitter.com/danfriedman0) et al.
+
+Transformer Programs are modified Transformer models that can be trained using gradient-based optimization and that can automatically be converted into a discrete, human-readable programs that are mechanistically interpretable by design.
+
+## Diffusion Models
+
+### [Understanding Diffusion Objectives as the ELBO with Simple Data Augmentation](https://arxiv.org/abs/2303.00848) by Diederik Kingma and [Ruiqi Gao](https://twitter.com/RuiqiGao)
+
+On the surface, it seems that state-of-the-art diffusion models are optimized with objectives that are very different from Evidence Lower Bound (ELBO) objectives, when in fact these objectives are equal to a weighted integral of ELBOs over different noise levels.
+
+### [Entropic Neural Optimal Transport via Diffusion Processes](https://arxiv.org/abs/2211.01156) by Nikita Gushchin et al.
+
+A new neural algorithm computes the entropic optimal transport (EOT) plan between probability distributions that are accessible by samples. The end-to-end algorithm consists of a single learning step, has fast inference and permits small entropy regularization coefficients.
+
+### [DiffuseBot: Breeding Soft Robots With Physics-Augmented Generative Diffusion Models](https://arxiv.org/abs/2311.17053) by Tsun-Hsuan Johnson Wang at al.
+
+DiffuseBot is a physics-augmented diffusion model that generates soft robot morphologies. It augments the diffusion process with a physical dynamical simulation and uses a co-design procedure that jointly optimizes physical design and control.
+
+## Optimization
+
+### A Single-Loop Accelerated Extra-Gradient Difference Algorithm with Improved Complexity Bounds for Constrained Minimax Optimization by Yuanyuan Liu et al.
+
+An extra-gradient difference acceleration algorithm for solving constrained nonconvex-nonconcave (NC-NC) minimax problems is proposed. An extra-gradient difference step obtains the quasi-cocoercivity property and momentum acceleration is used in the dual accelerating update step.
+
+### [Smoothing the Landscape Boosts the Signal for SGD: Optimal Sample Complexity for Learning Single Index Models](https://arxiv.org/abs/2305.10633) by [Alex Damian](https://twitter.com/alex_damian_) et al.
+
+This work closes the gap between the upper and lower bounds by showing that online SGD on a smoothed loss learns a single index model with respect to the isotropic Gaussian distribution in $$d$$ dimensions with $$n \gtrsim d^{k^\star/2}$$ samples.
+
+### [Generalizing Nonlinear ICA Beyond Structural Sparsity](https://arxiv.org/abs/2311.00866) by [Yujia Zheng](https://twitter.com/YujiaZheng9) and [Kun Zhang](https://twitter.com/kunkzhang)
+
+Nonlinear independent component analysis (ICA) aims to uncover true latent sources from observable nonlinear mixtures. A set of new nonlinear ICA identifiability results overcome the current bijectivity assumptions and sparsity and source independence constraints.
+
+### [Fine-Tuning Language Models with Just Forward Passes](https://arxiv.org/abs/2305.17333) by [Sadhika Malladi](https://twitter.com/SadhikaMalladi) et al.
+
+Backpropagation when fine-tuning language models requires a prohibitively large amount of memory. A memory-efficient zeroth-order optimizer (MeZO) can estimate gradients using only two forward passes and fine-tune language models with the same memory footprint as inference.
+
+## Datasets & Benchmarks
+
+### [Mesogeos: A multi-purpose dataset for data-driven wildfire modeling in the Mediterranean](https://arxiv.org/abs/2306.05144) by Spyridon Kondylatos et al.
+
+The Mesogeos dataset encourages short-term wildfire danger forecasting and final burned area estimation given the ignition point. It consists of wildfire drivers and historical records of wildfire ignitions and burned areas in a grid of 1km × 1km × 1-day resolution.
+
+### [ClimSim: A large multi-scale dataset for hybrid physics-ML climate emulation](https://arxiv.org/abs/2306.08754) by [Sungduk Yu](https://twitter.com/SungdukYu) et al. 🥇
+
+The ClimSim dataset encourages the development of ~1-km scale climate models using hybrid ML-physics techniques. It consists of 5.7B pairs of multivariate inputs (local climate states) and targets (cloud formation processes) generated by the E3SM-MMF climate simulator.
+
+### [Quilt-1M: One Million Image-Text Pairs for Histopathology](https://arxiv.org/abs/2306.11207) by Wisdom Ikezogwo et al.
+
+QUILT is a medical vision-language dataset, consisting of 802,144 image and text pairs, collected from educational YouTube videos by expert clinicians in the field of histopathology (the microscopic examination of tissue).
+
+### [BEDD: The MineRL BASALT Evaluation and Demonstrations Dataset for Training and Benchmarking Agents that Solve Fuzzy Tasks](https://arxiv.org/abs/2312.02405) by [Stephanie Milani](https://twitter.com/steph_milani) et al.
+
+BASALT Evaluation and Demonstrations Dataset (BEDD) is a resource for algorithm development and performance assessment in Minecraft. It consists of 26M image-action pairs from nearly 14K videos of human players completing BASALT tasks in Minecraft.
+
+## Chain of Thought / Reasoning
+
+### [Why think step by step? Reasoning emerges from the locality of experience](https://arxiv.org/abs/2304.03843) by [Ben Prystawski](https://twitter.com/BenPrystawski) et al.
+
+Chain-of-thought reasoning (CoT), where intermediate steps are generated, is useful in language models when overlapping local variable clusters strongly influence each other. It enables local inference chaining to estimate relationships not seen together in training.
+
+### [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601) by [Shunyu Yao](https://twitter.com/ShunyuYao12) et al.
+
+Tree of Thoughts (ToT) enables exploration over coherent text units (thoughts) that are intermediate steps toward problem solving. The technique helps language models make decisions through consideration of different reasoning paths, self-evaluation and look-ahead/backtracking.
+
+### [Transformers as Statisticians: Provable In-Context Learning with In-Context Algorithm Selection](https://arxiv.org/abs/2306.04637) by Yu Bai et al.
+
+A comprehensive statistical theory for transformers' in-context learning (ICL), or prompting, capabilities is given, showing they can implement and adaptively select various machine learning algorithms in context.
+
+### [Towards Revealing the Mystery behind Chain of Thought: A Theoretical Perspective](https://arxiv.org/abs/2305.15408) by [Guhao Feng](https://twitter.com/Guhao_Feng) et al.
+
+Circuit complexity theory shows that bounded-depth Transformers can directly produce correct answers for basic arithmetic/equation tasks only when model size grows super-polynomially with input length. Using chain-of-thought with constant-size Transformers solves both tasks.
+
+## Graph Neural Networks / Invariance 
+
+### [Going beyond persistent homology using persistent homology](https://arxiv.org/abs/2311.06152) by Johanna Immonen et al.
+
+Color-separating sets resolve the problem of identifying the class of message-passing graph neural networks (MP-GNNs) that persistent homology (PH) can recognize. Graphs are distinguished using the persistence of their connected components, from filtering vertex and edge colors.
+
+### [Clifford Group Equivariant Neural Networks](https://arxiv.org/abs/2305.11141) by [David Ruhe](https://twitter.com/djjruhe) et al.
+
+Clifford Group Equivariant Neural Networks are a novel approach for constructing $$\mathrm{O}(n)$$- and $$\mathrm{E}(n)$$-equivariant models. 
+
+### Evaluating Post-hoc Explanations for Graph Neural Networks via Robustness Analysis by Junfeng Fang et al.
+
+OOD-resistant Adversarial Robustness (OAR) is a new evaluation metric for explaining graph neural networks, that avoids the out-of-distribution (OOD) issues plaguing current explanation methods, which work by feeding the explanatory subgraph and measuring output difference.
+
+## Privacy / Fairness
+
+### [Students Parrot Their Teachers: Membership Inference on Model Distillation](https://arxiv.org/abs/2303.03446) by Matthew Jagielski et al.
+
+This work presents membership inference attacks which show that model distillation only provides limited privacy leakage reduction. Attacks on private datasets can succeed even if the target model is never queried on actual training points.
+
+### [Rethinking Bias Mitigation: Fairer Architectures Make for Fairer Face Recognition](https://arxiv.org/abs/2210.09943) by Samuel Dooley et al.
+
+Face recognition systems exhibit bias across socio-demographic dimensions. Model biases, thought to arise from biased training data, are due to neural network architectures themselves. To test this, a neural architecture and hyperparameter search for fairness is performed.
+
+### [Ethical Considerations for Responsible Data Curation](https://arxiv.org/abs/2302.03629) by Jerone Andrews et al.
+
+This work presents proactive, domain-specific recommendations for curating human-centric computer vision (HCCV) datasets that address purpose, privacy and consent, and diversity concerns.
+
+## Probability / Sampling
+
+### [Sampling from Gaussian Process Posteriors using Stochastic Gradient Descent](https://arxiv.org/abs/2306.11589) by [Jihao Andreas Lin](https://twitter.com/JihaoAndreasLin) et al.
+
+Stochastic gradient descent can be a computationally efficient solution for the linear systems in Gaussian processes, remove the cubic cost in dataset size and conditioning sensitivity. 
+
+### [A Rigorous Link between Deep Ensembles and (Variational) Bayesian Methods](https://arxiv.org/abs/2305.15027) by Veit David Wild et al.
+
+A rigorous link between Bayesian, Variational Bayesian, and Deep Ensemble methods is established by reformulating the non-convex optimisation problem typically encountered in deep learning as a convex optimisation in the space of probability measures.
+
+### [Optimizing Solution-Samplers for Combinatorial Problems: The Landscape of Policy-Gradient Method](https://arxiv.org/abs/2310.05309) by [Constantine Caramanis](https://twitter.com/cmcaram) et al.
+
+A framework is developed analyzing the effectiveness of deep neural networks to tackle combinatorial problems as a solution generator successively improved using gradient-based methods. The framework examines the expressiveness, tractability and optimization landscape benignness.
+
+## Vision
+
+### [Visual Instruction Tuning](https://arxiv.org/abs/2304.08485) by [Haotian Liu](https://twitter.com/imhaotian) et al.
+
+LLaVA: Large Language and Vision Assistant is an end-to-end large multimodal model connecting a vision encoder and an LLM for visual and language understanding. The model is instruction tuned on multimodal language-image instruction-following data generated by text-only GPT-4.
+
+### [EgoEnv: Human-centric environment representations from egocentric video](https://arxiv.org/abs/2207.11365) by Tushar Nagarajan et al.
+
+Egocentric video can be linked to the environment by learning representations that are predictive of the camera-wearer's local surroundings. These models are trained using videos from simulated fully observable 3D environments and tested on human-captured real-world videos.
+
+### [DataComp: In search of the next generation of multimodal datasets](https://arxiv.org/abs/2304.14108) by Samir Yitzhak Gadre et al.
+
+DataComp is a testbed for multimodal dataset experiments centered around a candidate pool of 12.8B image-text pairs from Common Crawl. Users create new datasets by filtering and curating data sources, evaluating them by testing the trained models on 38 downstream test sets.
+
+### [Siamese Masked Autoencoders](https://arxiv.org/abs/2305.14344) by [Agrim Gupta](https://twitter.com/agrimgupta92) et al.
+
+Siamese Masked Autoencoders (SiamMAE) is an extension of Masked Autoencoders for learning visual correspondence from videos. It operates on video frame pairs and asymmetrically masks 95% of the patches in future frames, encouraging the learning of object-centric representations.
+
+### [Image Captioners Are Scalable Vision Learners Too](https://arxiv.org/abs/2306.07915) by [Michael Tschannen](https://twitter.com/mtschannen) et al.
+
+Contrastive pretraining on image-text pairs is thought to be a superior pretraining strategy to image captioning. After matching training data, compute, and model capacity, image captioning alone is surprisingly effective, even surpassing contrastively pretraining in some tasks.
+
+### [The Surprising Effectiveness of Diffusion Models for Optical Flow and Monocular Depth Estimation](https://arxiv.org/abs/2306.01923) by Saurabh Saxena et al.
+
+Denoising diffusion probabilistic models excel in estimating optical flow and monocular depth, without task-specific architectures and loss functions. With self-supervised pre-training and infilling and denoising diffusion training, these models achieve SOTA results.
+
+### [Spatial-frequency channels, shape bias, and adversarial robustness](https://arxiv.org/abs/2309.13190) by [Ajay Subramanian](https://twitter.com/ajaysub110) et al.
+
+In neuroscience, critical band masking is used to reveal the spatial frequency data used for object recognition. Using it as a task for network-human comparison, the network channel is more than twice as wide as the human channel, with adversarial training worsening it.
+
+## Large Language Models
+
+### [Are Emergent Abilities of Large Language Models a Mirage?](https://arxiv.org/abs/2304.15004) by [Rylan Schaeffer](https://twitter.com/RylanSchaeffer) et al. 🥇
+
+Large language models' emergent abilities may actually be a result of metric choices. Particularly, smooth, continuous, predictable changes in model performance, as scale increases, can appear sharp and unpredictable if the researcher chooses a non-linear or discontinuous metric.
+
+### [Task Arithmetic in the Tangent Space: Improved Editing of Pre-Trained Models](https://arxiv.org/abs/2305.12827) by [Guillermo Ortiz-Jimenez](https://twitter.com/gortizji) et al.
+
+Task arithmetic, a cost-effective method for editing pre-trained models, improves/forgets tasks by adding/subtracting their fine-tuned weights. This works by weight disentanglement, when distinct weight space directions govern separate, localized regions in function space.
+
+### [The Clock and the Pizza: Two Stories in Mechanistic Explanation of Neural Networks](https://arxiv.org/abs/2306.17844) by [Ziqian Zhong](https://twitter.com/fjzzq2002) et al.
+
+Can neural networks rediscover known algorithms when trained on well-understood tasks? Using the modular addition task, models are able to learn both the known Clock algorithm and an unknown, but comprehensible, Pizza algorithm.
+
+### [Jailbroken: How Does LLM Safety Training Fail?](https://arxiv.org/abs/2307.02483) by [Alexander Wei](https://twitter.com/aweisawei) et al.
+
+Jailbreak design can be guided by two failure modes: competing objectives (when a model’s capabilities and safety goals conflict) and mismatched generalization (safety training fails to generalize to a domain for which capabilities exist).
+
+## Theory
+
+### [Optimal Learners for Realizable Regression: PAC Learning and Online Learning](https://arxiv.org/abs/2307.03848) by [Idan Attias](https://twitter.com/IdanAttias) et al.
+
+This study advances the understanding of statistical complexity in realizable regression, introducing new dimensions and learners that qualitatively and quantitatively define learnability in both PAC and online settings.
+
+### [Random Cuts are Optimal for Explainable k-Medians](https://arxiv.org/abs/2304.09113) by Konstantin Makarychev and Liren Shan
+
+This works shows that the RandomCoordinateCut algorithm gives the optimal competitive ratio for explainable $$k$$-medians in $$\ell_1$$. A tight analysis of the algorithm is provided and its competitive ratio is proven to be upper bounded by $$2\ln k+2$$.
+
+### [Tester-Learners for Halfspaces: Universal Algorithms](https://arxiv.org/abs/2305.11765) by Aravind Gollakota et al.
+
+This work introduces the first tester-learner for halfspaces succeeding universally over a wide class of structured distributions, running in fully polynomial time, guaranteeing that the learner achieves error $$O(\mathrm{opt}) + \epsilon$$ on any accepted labeled distribution.
+
+### [Improved Algorithms for Stochastic Linear Bandits Using Tail Bounds for Martingale Mixtures](https://arxiv.org/abs/2309.14298) by [Hamish Flynn](https://twitter.com/flynn_hamish) et al.
+
+This study introduces improved algorithms with worst-case regret guarantees for the stochastic linear bandit problem, utilizing a novel tail bound for adaptive martingale mixtures to construct confidence sequences which are suitable for stochastic bandits.
+
+# Other Highlights
+
+### Neural Scaling Laws Panel with Nick Bostrom, Yoshua Bengio [Yann LeCun](https://twitter.com/ylecun), [Max Tegmark](https://twitter.com/tegmark), [Percy Liang](https://twitter.com/percyliang), [Julia Bossmann](https://twitter.com/juliabossmann), [Jenia Jitsev](https://twitter.com/JJitsev), [Nora Belrose](https://twitter.com/norabelrose), [Irina Rish](https://twitter.com/irinarish), [ethanCaballero](https://twitter.com/ethanCaballero), [Quintin Pope](https://twitter.com/QuintinPope5), and [Joscha Bach](https://twitter.com/Plinz)
+
+Members of the panel take turns answering several questions: Should powerful AI be made public? When and on what did you change your mind recently?
+
+### GraphCast: Global Weather Prediction with Rémi Lam
+
+GraphCast predicts the Earth's surface and atmospheric weather, ten days ahead, at high spatial resolution. It significantly outperforms the industry deterministic gold standard (HRES).
+
+### Isomorphic Labs with [Sergei Yakneen](https://twitter.com/SergeiIakhnin) and [Max Jaderberg](https://twitter.com/maxjaderberg) 
+
+DeepMind's drug discovery spin-off is thinking about: How far can architectures (GNNs, SSMs, Transformers) be scaled? How do diffusion models and flow matching methods connect to the underlying physics? Are there golden self-supervised tasks for atoms, energies and proteins?
+
+### [In Defense of Zero Imputation for Tabular Deep Learning](https://neurips.cc/virtual/2023/81308) by John Van Ness and [Madeleine Udell](https://twitter.com/madeleineudell)
+
+Multi-layer perceptrons (MLPs) paired with zero imputation perform as well on real-world data as more powerful deep impute-then-predict neural network models (such as NeuMiss, supMIWAE and GRAPE) that allow for joint optimization of imputations and predictions.
+
+### [Teaching Arithmetic to Small Transformers](https://arxiv.org/abs/2307.03381) by [Nayoung Lee](https://twitter.com/nayoung_nylee) et al.
+
+Small transformers, trained from random initialization, can efficiently learn arithmetic operations and elementary functions using the next-token prediction objective if simple formatting changes are made to the training data.
+
+### [From Pixels to UI Actions: Learning to Follow Instructions via Graphical User Interfaces](https://arxiv.org/abs/2306.00245) by Peter Shaw et al.
+
+Digital agents for graphical user interfaces usually rely on HTML. Pix2Act relies solely on pixel-based input and selects actions corresponding to basic mouse and keyboard functions. It uses a pre-trained image-to-text Transformer model tuned with Behavioral Cloning and MCTS.
+
+### [Counterfactual Memorization in Neural Language Models](https://arxiv.org/abs/2112.12938) by Chiyuan Zhang et al.
+
+Larger models results in more memorization, leading to privacy, copyright, and generalization issues. Counterfactual memorization characterizes how a model's predictions change if a document is omitted during training, since memorized examples are ones that commonly occur.
