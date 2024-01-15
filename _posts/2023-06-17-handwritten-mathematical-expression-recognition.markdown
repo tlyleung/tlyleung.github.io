@@ -355,7 +355,7 @@ plt.axis("off")
 
 
 
-![png](/assets/images/handwritten-mathematical-expression-recognition/handwriting_24_1.png){: .multiply }
+![png](/assets/images/handwritten-mathematical-expression-recognition/handwriting_24_1.png){: .multiply .img-fluid }
     
 
 

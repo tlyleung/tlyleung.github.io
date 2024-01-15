@@ -239,7 +239,7 @@ grid = make_grid(x[0], nrow=2, normalize=True)
 show(grid)
 ```
     
-![png](/assets/images/visual-odometry/visual-odometry_11_0.png){: .multiply }
+![png](/assets/images/visual-odometry/visual-odometry_11_0.png){: .multiply .img-fluid }
 
 
 # Visualizing the Test Trajectory
@@ -596,7 +596,7 @@ show(grid)
 ```
 
 
-![png](/assets/images/visual-odometry/visual-odometry_26_0.png){: .multiply }
+![png](/assets/images/visual-odometry/visual-odometry_26_0.png){: .multiply .img-fluid }
 
 
 Note: since the car is moving forwards, the pixels move outwards away from the center vanishing point, meaning that the pixels on the left move further left and the pixels on the right move further right.

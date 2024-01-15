@@ -35,7 +35,7 @@ plt.show()
 ```
 
 
-![png](/assets/images/deepracer/deepracer_2_0.png){: .multiply }
+![png](/assets/images/deepracer/deepracer_2_0.png){: .multiply .img-fluid }
     
 
 
@@ -204,7 +204,7 @@ plt.tight_layout()
 plt.show()
 ```
     
-![png](/assets/images/deepracer/deepracer_17_1.png){: .multiply }
+![png](/assets/images/deepracer/deepracer_17_1.png){: .multiply .img-fluid }
     
 
 
@@ -341,7 +341,7 @@ plt.show()
 
 
     
-![png](/assets/images/deepracer/deepracer_23_0.png){: .multiply }
+![png](/assets/images/deepracer/deepracer_23_0.png){: .multiply .img-fluid }
     
 
 
@@ -402,7 +402,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![png](/assets/images/deepracer/deepracer_26_1.png){: .multiply }
+![png](/assets/images/deepracer/deepracer_26_1.png){: .multiply .img-fluid }
 
 
 The result is a mixed bag. The performance on some tracks is satisfactory, but in others, the car seems to do a U-turn. This may be because when travelling fast around sharp corners, the car is prone to spinning out, and since it only relies on image input, resumes driving in whatever direction it's facing.
