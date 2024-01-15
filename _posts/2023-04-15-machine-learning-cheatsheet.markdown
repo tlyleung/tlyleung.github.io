@@ -7,7 +7,7 @@ authors: [tlyleung]
 permalink: machine-learning-cheatsheet
 ---
 
-<section markdown="1" style="background-image: url('/assets/images/streamline/brain-1.svg');">
+<section markdown="1" style="background-image: url('/assets/images/streamline/neural-swarm-1.svg');">
 # Machine Learning Cheatsheet
 
 This cheatsheet attempts to give a high-level overview of the incredibly large field of Machine Learning. Please [contact me](/authors/tlyleung) for corrections/omissions.
@@ -624,7 +624,7 @@ Train-serving skew is when a model performs well during development but poorly a
   - Resume screening example: originally, model thinks X is a good feature, so the model recommends resume with X. After a while, hiring managers only hires people with X and model confirms X is good. Can be mitigated using randomisation and positional features.
 </section>
 
-<section markdown="1" style="background-image: url('/assets/images/streamline/neural-swarm-2.svg');">
+<section markdown="1" style="background-image: url('/assets/images/streamline/brain-1.svg');">
 # Models: Supervised Learning
 
 Supervised learning models make predictions after seeing lots of data with the correct answers. The model discovers the relationship between the data and the correct answers.
