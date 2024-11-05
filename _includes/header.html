@@ -1,0 +1,17 @@
+<header>
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_paths = site.header_pages | default: default_paths -%}
+  {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+  <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+  {%- if titles_size > 0 -%}
+    <nav>
+      {%- for path in page_paths -%}
+        {%- assign page = site.pages | where: "path", path | first -%}
+        {%- if page.title -%}
+        <a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+        {%- endif -%}
+      {%- endfor -%}
+    </nav>
+  {%- endif -%}
+</header>
