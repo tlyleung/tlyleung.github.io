@@ -12,6 +12,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1 # replaced with major version to get latest updates
+        with:
+          bundler-cache: true
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
