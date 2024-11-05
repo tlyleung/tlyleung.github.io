@@ -11,21 +11,24 @@ layout: base
 
   {%- assign posts = site.posts -%}
   {%- if posts.size > 0 -%}
-    <ul>
+    <div class="mx-auto mb-4 grid grid-cols-1 gap-4 p-4 md:mb-8 md:grid-cols-2 md:gap-8 md:p-8 lg:max-w-screen-xl">
       {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
-      <li>
-        <span>{{ post.date | date: date_format }}</span>
-        <h3>
-          <a href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
+        <a class="group block space-y-1 pb-4" href="{{ post.url | relative_url }}">
+          <div class="aspect-video w-full overflow-hidden rounded-md">
+            <img src="{{ post.image }}" alt="{{ post.title }}" class="object-cover object-center group-hover:scale-110 transition duration-300 ease-in-out transform-gpu">
+          </div>
+          <div class="pt-2 text-base/6 text-zinc-500 group-hover:text-zinc-600 sm:text-xs/6 dark:text-zinc-400 dark:group-hover:text-zinc-300">{{ post.date | date: date_format }}</div>
+          <h1 class="text-2xl/8 font-semibold text-zinc-700 group-hover:text-zinc-950 sm:text-xl/8 dark:text-zinc-300 dark:group-hover:text-white">
+              {{ post.title | escape }}
+          </h1>
+          {%- if site.show_excerpts -%}
+          <div class="line-clamp-3 text-lg/6 text-zinc-500 group-hover:text-zinc-600 sm:text-base/6 dark:text-zinc-400 dark:group-hover:text-zinc-300">
+            {{ post.excerpt }}
+          </div>
+          {%- endif -%}
+      </a>
       {%- endfor -%}
-    </ul>
+    </div>
   {%- endif -%}
 </div>

@@ -1,30 +1,17 @@
 ---
 layout: base
 ---
-<article itemscope itemtype="http://schema.org/BlogPosting">
+<article class="prose lg:prose-xl prose-zinc dark:prose-invert mx-auto mb-12 max-w-prose p-4" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
     <p>
       {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
       </time>
-      {%- if page.modified_date -%}
-        ~ 
-        {%- assign mdate = page.modified_date | date_to_xmlschema -%}
-        <time datetime="{{ mdate }}" itemprop="dateModified">
-          {{ mdate | date: date_format }}
-        </time>
-      {%- endif -%}
-      {%- if page.author -%}
-        {% for author in page.author %}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span itemprop="name">{{ author }}</span></span>
-            {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}
-      {%- endif -%}</p>
+    </p>
+    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
   </header>
-  <div itemprop="articleBody">
+  <div class="[&>p:first-of-type]:text-xl [&>p:first-of-type]:font-semibold [&>p:first-of-type]:text-zinc-500 [&>p:first-of-type]:lg:text-2xl [&>p:first-of-type]:dark:text-zinc-400" itemprop="articleBody">
     {{ content }}
   </div>
 </article>
