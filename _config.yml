@@ -28,6 +28,7 @@ date_format: "%-d %B %Y"
 plugins:
   - jekyll-feed
   - jekyll-postcss
+  - jekyll-sitemap
 
 postcss:
   cache: false
