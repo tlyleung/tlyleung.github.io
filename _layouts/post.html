@@ -1,6 +1,7 @@
 ---
 layout: base
 ---
+
 <article class="prose lg:prose-xl prose-zinc dark:prose-invert mx-auto mb-12 max-w-prose p-4" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
     <p>
@@ -10,8 +11,12 @@ layout: base
       </time>
     </p>
     <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="font-semibold text-xl text-zinc-500 lg:text-2xl dark:text-zinc-400">{{ page.subtitle | escape }}</p>
+    <div class="flex aspect-video w-full items-center justify-center overflow-hidden rounded-md">
+      <img src="/assets/images/shared/abstract.jpg" alt="Abstract painting by Aurelius Wendelken" class="object-none" style="object-position: {{ page.x }}% {{ page.y }}%;" />
+    </div>
   </header>
-  <div class="[&>p:first-of-type]:text-xl [&>p:first-of-type]:font-semibold [&>p:first-of-type]:text-zinc-500 [&>p:first-of-type]:lg:text-2xl [&>p:first-of-type]:dark:text-zinc-400" itemprop="articleBody">
+  <div itemprop="articleBody">
     {{ content }}
   </div>
 </article>

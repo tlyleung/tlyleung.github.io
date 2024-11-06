@@ -19,7 +19,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   Machine Learning Blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://actamachina.com" # the base hostname & protocol for your site, e.g. http://example.com
-show_excerpts: true
 
 # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
 # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
