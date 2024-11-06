@@ -14,11 +14,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Acta Machina
+tagline: Machine Learning Blog
 email: timothyleung@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Machine Learning Blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://actamachina.com" # the base hostname & protocol for your site, e.g. http://example.com
+lang: en_GB
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:title
 
 # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
 # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
@@ -28,6 +36,7 @@ date_format: "%-d %B %Y"
 plugins:
   - jekyll-feed
   - jekyll-postcss
+  - jekyll-seo-tag
   - jekyll-sitemap
 
 postcss:

@@ -2,7 +2,7 @@
 layout: base
 ---
 
-<article class="prose lg:prose-xl prose-zinc dark:prose-invert mx-auto mb-12 max-w-prose p-4" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="prose lg:prose-xl prose-zinc dark:prose-invert mx-auto mb-12 max-w-prose p-4 prose-h1:font-semibold" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
     <p>
       {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
@@ -11,12 +11,28 @@ layout: base
       </time>
     </p>
     <h1 itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="font-semibold text-xl text-zinc-500 lg:text-2xl dark:text-zinc-400">{{ page.subtitle | escape }}</p>
+    <p class="font-medium text-xl text-zinc-500 lg:text-2xl dark:text-zinc-400">{{ page.description | escape }}</p>
     <div class="flex aspect-video w-full items-center justify-center overflow-hidden rounded-md">
       <img src="/assets/images/shared/abstract.jpg" alt="Abstract painting by Aurelius Wendelken" class="object-none" style="object-position: {{ page.x }}% {{ page.y }}%;" />
     </div>
+    <p>
+      {%- if page.authors -%}
+        By
+        {% for key in page.authors %}
+          {% assign author = site.data.authors[key] %}
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            {%- if author.twitter -%}
+            <a href="https://twitter.com/{{ author.twitter }}" itemprop="name">{{ author.name | escape }}</a>
+            {%- else -%}
+            <span itemprop="name">{{ author.name | escape }}</span>
+            {%- endif -%}  
+          </span>
+          {%- unless forloop.last -%}, {%- endunless -%}
+        {% endfor %}
+      {%- endif -%}
+    </p>
   </header>
-  <div itemprop="articleBody">
+  <div class="prose-a:text-blue-600 dark:prose-a:text-blue-500" itemprop="articleBody">
     {{ content }}
   </div>
 </article>
