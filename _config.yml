@@ -24,6 +24,9 @@ lang: en_GB
 
 # Collections
 collections:
+  notes:
+    output: true
+    permalink: /:collection/:title
   posts:
     output: true
     permalink: /:collection/:title
@@ -35,6 +38,7 @@ date_format: "%-d %B %Y"
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-inline-svg
   - jekyll-postcss
   - jekyll-seo-tag
   - jekyll-sitemap

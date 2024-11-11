@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+	<rect class="fill-none stroke-[3] stroke-zinc-200 dark:stroke-zinc-700" x="16" y="16" width="96" height="96"/>
+	<line class="fill-none stroke-[3] stroke-zinc-200 dark:stroke-zinc-700" x1="16" y1="64" x2="112" y2="64"/>
+	<line class="fill-none stroke-[3] stroke-zinc-200 dark:stroke-zinc-700" x1="64" y1="16" x2="64" y2="112"/>
+	<path class="fill-none stroke-[3] stroke-zinc-500 dark:stroke-zinc-400" d="m16,63.91c12,0,33.88,2.9,48-23.94,13.38-25.44,36-23.96,48-23.94"/>
+</svg>

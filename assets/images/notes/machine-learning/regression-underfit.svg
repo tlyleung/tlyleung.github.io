@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+	<rect class="fill-none stroke-[3] stroke-zinc-200 dark:stroke-zinc-700" x="16" y="16" width="96" height="96"/>
+	<line class="fill-none stroke-[3] stroke-zinc-200 dark:stroke-zinc-700" x1="16" y1="64" x2="112" y2="64"/>
+	<line class="fill-none stroke-[3] stroke-zinc-200 dark:stroke-zinc-700" x1="64" y1="16" x2="64" y2="112"/>
+	<g class="opacity-50">
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="26" cy="26" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="58" cy="30" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="30" cy="38" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="58" cy="74" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="70" cy="34" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="26" cy="54" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="46" cy="46" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="38" cy="54" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="58" cy="46" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="102" cy="70" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="86" cy="70" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="94" cy="30" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="82" cy="30" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="102" cy="22" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="90" cy="38" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="106" cy="34" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="74" cy="22" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="106" cy="42" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="82" cy="82" r="2"/>
+		<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="46" cy="22" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="78" cy="42" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="86" cy="50" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="74" cy="74" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="54" cy="58" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="46" cy="70" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="30" cy="74" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="26" cy="86" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="30" cy="102" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="42" cy="90" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="42" cy="106" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="58" cy="90" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="73" cy="87" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="50" cy="98" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="70" cy="102" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="86" cy="98" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="102" cy="106" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="106" cy="90" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="94" cy="86" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="70" cy="62" r="2"/>
+		<circle class="fill-none stroke-zinc-500 dark:stroke-zinc-400" cx="98" cy="54" r="2"/>
+	</g>
+	<line class="fill-none stroke-[3] stroke-zinc-500 dark:stroke-zinc-400" x1="16" y1="72" x2="112" y2="56"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+	<text class="text-sm fill-zinc-700 dark:fill-zinc-300" text-anchor="middle" dominant-baseline="central" x="124" y="64" transform="rotate(90, 124, 64)">H,W</text>
+	<text class="text-sm fill-zinc-700 dark:fill-zinc-300" text-anchor="middle" dominant-baseline="central" x="32" y="112">C</text>
+	<text class="text-sm fill-zinc-700 dark:fill-zinc-300" text-anchor="middle" dominant-baseline="central" x="96" y="112">N</text>
+	<polygon class="fill-zinc-200 dark:fill-zinc-700 stroke-none" points="97.98 31.36 52.87 57.58 18.82 37.92 63.93 11.7 97.98 31.36"/>
+	<polygon class="fill-zinc-200 dark:fill-zinc-700 stroke-none" points="52.87 57.58 52.73 109.75 18.67 90.09 18.82 37.92 52.87 57.58"/>
+	<polygon class="fill-zinc-500 dark:fill-zinc-400 stroke-none" points="109.33 37.91 64.22 64.13 52.87 57.58 97.98 31.36 109.33 37.91"/>
+	<polygon class="fill-zinc-500 dark:fill-zinc-400 stroke-none" points="109.33 37.91 109.18 90.08 64.07 116.3 64.22 64.13 109.33 37.91"/>
+	<polygon class="fill-zinc-500 dark:fill-zinc-400 stroke-none" points="64.22 64.13 64.07 116.3 52.73 109.75 52.87 57.58 64.22 64.13"/>
+	<polygon class="opacity-10" points="109.33 37.6 109.18 89.77 64.07 115.98 64.22 63.81 109.33 37.6"/>
+	<polygon class="opacity-20" points="52.88 57.26 18.82 37.6 18.67 89.77 52.73 109.43 64.07 115.98 64.22 63.81 52.88 57.26"/>
+</svg>

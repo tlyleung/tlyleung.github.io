@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+	<path class="fill-zinc-200 dark:fill-zinc-700 stroke-none" d="m64,16c-26.51,0-48,21.49-48,48s21.49,48,48,48,48-21.49,48-48-21.49-48-48-48Zm0,84c-19.88,0-36-16.12-36-36s16.12-36,36-36,36,16.12,36,36-16.12,36-36,36Z"/>
+	<path class="fill-zinc-200 dark:fill-zinc-700 stroke-none" d="m64,40c-13.25,0-24,10.75-24,24s10.75,24,24,24,24-10.75,24-24-10.75-24-24-24Zm0,36c-6.63,0-12-5.37-12-12s5.37-12,12-12,12,5.37,12,12-5.37,12-12,12Z"/>
+	<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="71.15" cy="38.55" r="2"/>
+	<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="76.22" cy="43.37" r="2"/>
+	<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="76.59" cy="32.05" r="2"/>
+	<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="87.76" cy="32.43" r="2"/>
+	<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="72.32" cy="42.78" r="2"/>
+	<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="85.85" cy="45.03" r="2"/>
+	<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="78.05" cy="37.63" r="2"/>
+	<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="79.30" cy="42.59" r="2"/>
+	<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="87.16" cy="39.10" r="2"/>
+	<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="70.06" cy="33.28" r="2"/>
+	<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="85.50" cy="34.47" r="2"/>
+	<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="83.34" cy="43.79" r="2"/>
+	<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="70.47" cy="34.73" r="2"/>
+	<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="87.09" cy="48.75" r="2"/>
+	<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="86.04" cy="46.48" r="2"/>
+	<circle class="fill-zinc-500 dark:fill-zinc-400 stroke-none" cx="71.40" cy="35.87" r="2"/>
+</svg>

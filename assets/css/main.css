@@ -4,3 +4,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+svg {
+	text {
+		fill: currentColor !important;
+	}
+
+	.js-line {
+		stroke: currentColor !important;
+	}
+}
