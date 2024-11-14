@@ -1,0 +1,4 @@
+---
+layout: artworks
+permalink: /artworks/
+---

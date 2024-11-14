@@ -1,0 +1,45 @@
+---
+layout: base
+---
+
+<div class="grid grid-cols-1 md:grid-cols-3 px-4 gap-4 md:px-8 md:gap-8">
+  <div id="frame-container" class="bg-[#e9e9e9] col-span-1 md:col-span-2 flex justify-center items-center h-full relative md:order-2">
+    <img src="/assets/images/shared/frame.jpg" alt="{{ page.title }}" class="w-full min-h-[200px] max-h-[calc(100vh-88px)] object-contain" />
+    <div id="sketch" class="brightness-80 absolute overflow-hidden blur-[0.5px] drop-shadow"></div>
+  </div>
+  <div class="py-8 flex items-center md:order-1">
+    <div>
+      <h1 class="text-2xl/8 font-semibold text-zinc-950 sm:text-xl/8 dark:text-white">{{ page.artist | escape }}</h1>
+      <h2 class="text-lg sm:text-base text-zinc-950 dark:text-white mb-8"><span class="italic">{{ page.title | escape }},</span> {{ page.date | date: "%Y" }}</h2>
+      <p class="text-lg sm:text-base text-zinc-500 dark:text-zinc-400">{{ page.medium | escape }}</p>
+      <p class="text-lg sm:text-base text-zinc-500  dark:text-zinc-400 mb-8">{{ page.dimensions | escape }}</p>
+      <p class="space-x-2">
+        <button id="generate" class="
+        relative isolate inline-flex items-center justify-center gap-x-2 rounded-lg border text-base/6 font-semibold
+        px-[calc(theme(spacing[3.5])-1px)] py-[calc(theme(spacing[2.5])-1px)] sm:px-[calc(theme(spacing.3)-1px)] sm:py-[calc(theme(spacing[1.5])-1px)] sm:text-sm/6
+        border-zinc-950/10 text-zinc-950 active:bg-zinc-950/[2.5%] hover:bg-zinc-950/[2.5%]
+        dark:border-white/15 dark:text-white dark:bg-transparent dark:active:bg-white/5 dark:hover:bg-white/5
+        ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="-mx-0.5 my-0.5 size-5 shrink-0 sm:my-1 sm:size-4 text-zinc-500 dark:text-zinc-400">
+            <path fill-rule="evenodd" d="M5 4a.75.75 0 0 1 .738.616l.252 1.388A1.25 1.25 0 0 0 6.996 7.01l1.388.252a.75.75 0 0 1 0 1.476l-1.388.252A1.25 1.25 0 0 0 5.99 9.996l-.252 1.388a.75.75 0 0 1-1.476 0L4.01 9.996A1.25 1.25 0 0 0 3.004 8.99l-1.388-.252a.75.75 0 0 1 0-1.476l1.388-.252A1.25 1.25 0 0 0 4.01 6.004l.252-1.388A.75.75 0 0 1 5 4ZM12 1a.75.75 0 0 1 .721.544l.195.682c.118.415.443.74.858.858l.682.195a.75.75 0 0 1 0 1.442l-.682.195a1.25 1.25 0 0 0-.858.858l-.195.682a.75.75 0 0 1-1.442 0l-.195-.682a1.25 1.25 0 0 0-.858-.858l-.682-.195a.75.75 0 0 1 0-1.442l.682-.195a1.25 1.25 0 0 0 .858-.858l.195-.682A.75.75 0 0 1 12 1ZM10 11a.75.75 0 0 1 .728.568.968.968 0 0 0 .704.704.75.75 0 0 1 0 1.456.968.968 0 0 0-.704.704.75.75 0 0 1-1.456 0 .968.968 0 0 0-.704-.704.75.75 0 0 1 0-1.456.968.968 0 0 0 .704-.704A.75.75 0 0 1 10 11Z" clip-rule="evenodd" />
+          </svg>
+          <span>Generate</span>
+        </button>
+        <button id="share" class="
+        relative isolate inline-flex items-center justify-center gap-x-2 rounded-lg border text-base/6 font-semibold
+        px-[calc(theme(spacing[3.5])-1px)] py-[calc(theme(spacing[2.5])-1px)] sm:px-[calc(theme(spacing.3)-1px)] sm:py-[calc(theme(spacing[1.5])-1px)] sm:text-sm/6
+        border-zinc-950/10 text-zinc-950 active:bg-zinc-950/[2.5%] hover:bg-zinc-950/[2.5%]
+        dark:border-white/15 dark:text-white dark:bg-transparent dark:active:bg-white/5 dark:hover:bg-white/5
+        ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="-mx-0.5 my-0.5 size-5 shrink-0 sm:my-1 sm:size-4 text-zinc-500 dark:text-zinc-400">
+            <path fill-rule="evenodd" d="M8.914 6.025a.75.75 0 0 1 1.06 0 3.5 3.5 0 0 1 0 4.95l-2 2a3.5 3.5 0 0 1-5.396-4.402.75.75 0 0 1 1.251.827 2 2 0 0 0 3.085 2.514l2-2a2 2 0 0 0 0-2.828.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            <path fill-rule="evenodd" d="M7.086 9.975a.75.75 0 0 1-1.06 0 3.5 3.5 0 0 1 0-4.95l2-2a3.5 3.5 0 0 1 5.396 4.402.75.75 0 0 1-1.251-.827 2 2 0 0 0-3.085-2.514l-2 2a2 2 0 0 0 0 2.828.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+          </svg>
+          <span>Share</span>
+        </button>
+      </p>
+    </div>
+  </div>
+</div>
+
+{{ content }}

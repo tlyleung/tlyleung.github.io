@@ -24,6 +24,9 @@ lang: en_GB
 
 # Collections
 collections:
+  artworks:
+    output: true
+    permalink: /:collection/:title
   notes:
     output: true
     permalink: /:collection/:title

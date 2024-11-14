@@ -12,6 +12,9 @@
     <nav class="flex flex-1 items-center gap-4 py-2.5">
       <div aria-hidden="true" class="-ml-4 flex-1"></div>
       <div class="flex items-center gap-3 lg:gap-8">
+        <a href="{{ "/artworks/" | relative_url }}" class="{% if page.url == "/artworks/" %}text-zinc-950 dark:text-white{% else %}text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white{% endif %}">
+          Artworks
+        </a>
         <!-- <a href="{{ "/notes/" | relative_url }}" class="{% if page.url == "/notes/" %}text-zinc-950 dark:text-white{% else %}text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white{% endif %}">
           Notes
         </a> -->

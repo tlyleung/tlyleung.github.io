@@ -1,0 +1,24 @@
+---
+layout: base
+---
+
+<div>
+  {%- assign artworks = site.artworks | sort: "date" | reverse -%}
+  {%- if artworks.size > 0 -%}
+    <div class="mx-auto mb-4 grid grid-cols-1 gap-4 px-4 md:mb-8 md:grid-cols-2 md:gap-8 md:px-8 lg:max-w-screen-xl">
+      {%- for artwork in artworks -%}
+        <a class="group block space-y-1 pb-4" href="{{ artwork.url | relative_url }}">
+          <div class="mb-2 flex aspect-video w-full items-center justify-center overflow-hidden">
+            <img src="/assets/images/artworks/{{ artwork.slug }}/gallery-sm.jpg" alt="" class="transform-gpu transition duration-300 ease-in-out group-hover:scale-[2]" />
+          </div>
+          <h1 class="text-2xl/8 font-semibold text-zinc-700 group-hover:text-zinc-950 sm:text-xl/8 dark:text-zinc-300 dark:group-hover:text-white">
+              {{ artwork.artist | escape }}
+          </h1>
+          <p class="line-clamp-3 text-lg/6 text-zinc-500 group-hover:text-zinc-600 sm:text-base/6 dark:text-zinc-400 dark:group-hover:text-zinc-300">
+            <span class="italic">{{ artwork.title | escape }},</span> {{ artwork.date | date: "%Y" }}
+          </p>
+      </a>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</div>
