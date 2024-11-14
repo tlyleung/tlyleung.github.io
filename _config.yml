@@ -38,6 +38,9 @@ collections:
 # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
 date_format: "%-d %B %Y"
 
+# Google Analytics
+google_analytics: G-Z91NRNGY2W
+
 # Build settings
 plugins:
   - jekyll-feed
