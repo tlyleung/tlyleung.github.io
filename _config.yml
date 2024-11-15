@@ -27,6 +27,9 @@ collections:
   artworks:
     output: true
     permalink: /:collection/:title
+  demos:
+    output: false
+    permalink: /:collection/:title
   notes:
     output: true
     permalink: /:collection/:title
