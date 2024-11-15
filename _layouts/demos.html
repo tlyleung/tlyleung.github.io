@@ -12,11 +12,11 @@ layout: base
           <div class="mb-2 flex aspect-video w-full items-center justify-center overflow-hidden rounded-md">
             <img src="/assets/images/shared/demos.jpg" alt="Abstract painting by Aurelius Wendelken" class="transform-gpu object-none transition duration-300 ease-in-out group-hover:scale-110" style="object-position: {{ post.x }}% {{ post.y }}%;" />
           </div>
-          <div class="text-sm/6 text-zinc-500 group-hover:text-zinc-600 sm:text-sm/6 dark:text-zinc-400 dark:group-hover:text-zinc-300">{{ demo.date | date: date_format }}</div>
-          <h1 class="text-2xl/8 font-semibold text-zinc-700 group-hover:text-zinc-950 sm:text-xl/8 dark:text-zinc-300 dark:group-hover:text-white">
+          <div class="text-sm/6 text-zinc-500 group-hover:text-zinc-600 dark:text-zinc-400 dark:group-hover:text-zinc-300">{{ demo.date | date: date_format }}</div>
+          <h1 class="text-xl/8 font-semibold text-zinc-700 group-hover:text-zinc-950 dark:text-zinc-300 dark:group-hover:text-white">
               {{ demo.title | escape }}
           </h1>
-          <p class="line-clamp-3 text-lg/6 text-zinc-500 group-hover:text-zinc-600 sm:text-base/6 dark:text-zinc-400 dark:group-hover:text-zinc-300">
+          <p class="line-clamp-3 text-base/6 text-zinc-500 group-hover:text-zinc-600 dark:text-zinc-400 dark:group-hover:text-zinc-300">
             {{ demo.description | escape }}
           </p>
       </a>
