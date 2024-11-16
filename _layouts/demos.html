@@ -8,7 +8,7 @@ layout: base
     <div class="mx-auto mb-4 grid grid-cols-1 gap-4 px-4 md:mb-8 md:grid-cols-2 md:gap-8 md:px-8 lg:max-w-screen-xl">
       {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
       {%- for demo in demos -%}
-        <a class="group block space-y-1 pb-4" href="{{ demo.url | relative_url }}">
+        <a class="group block space-y-1 pb-4" href="/{{ demo.slug }}">
           <div class="mb-2 flex aspect-video w-full items-center justify-center overflow-hidden rounded-md">
             <img src="/assets/images/shared/demos.jpg" alt="Abstract painting by Aurelius Wendelken" class="transform-gpu object-none transition duration-300 ease-in-out group-hover:scale-110" style="object-position: {{ post.x }}% {{ post.y }}%;" />
           </div>
