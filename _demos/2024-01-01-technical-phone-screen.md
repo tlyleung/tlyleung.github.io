@@ -1,6 +1,6 @@
 ---
 title: Technical Phone Screen
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+description: Engage in a real-time technical phone screen with code editor support.
 x: 50
 y: 50
 ---
