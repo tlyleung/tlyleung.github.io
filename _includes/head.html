@@ -13,9 +13,19 @@
   <script>MathJax = { chtml: { displayAlign: 'left' } };</script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
-  {%- elsif page.layout == 'artwork' -%}
+  {%- elsif page.layout == 'artwork' and page.p5 == true -%}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.min.js"></script>
-  <script src={{ "/assets/js/artwork.js" | relative_url }}></script>
+  <script src={{ "/assets/js/2d.js" | relative_url }}></script>
+  {%- elsif page.layout == 'artwork' and page.p5 == false -%}
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src={{ "/assets/js/3d.js" | relative_url }}></script>
   {%- endif -%}
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}

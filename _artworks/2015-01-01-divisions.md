@@ -4,6 +4,7 @@ artist: Charles Lorent
 title: Divisions
 dimensions: 19 ⅝ × 15 ¾ inches (50 × 40 cm)
 medium: Acrylic glass, paint and roach
+p5: true
 ---
 
 <script>

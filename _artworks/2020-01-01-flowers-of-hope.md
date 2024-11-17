@@ -4,6 +4,7 @@ artist: Kashima Kitamura
 title: Flowers of Hope
 dimensions: 15 ¾ × 19 ⅝ inches (40 × 50 cm)
 medium: Acrylic on canvas
+p5: true
 ---
 
 <script>

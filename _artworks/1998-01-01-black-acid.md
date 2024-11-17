@@ -4,6 +4,7 @@ artist: Liam Osterfeld
 title: Black Acid
 dimensions: 19 ⅝ × 15 ¾ inches (50 × 40 cm)
 medium: Acrylic on wood
+p5: true
 ---
 
 <script>

@@ -4,6 +4,7 @@ artist: Marissa Rohr
 title: Bye Bye Brazil
 dimensions: 15 ¾ × 19 ⅝ inches (40 × 50 cm)
 medium: Household gloss paint on canvas
+p5: true
 ---
 
 <script>

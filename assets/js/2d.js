@@ -9,7 +9,7 @@ function setup() {
   canvas = createCanvas(WIDTH, HEIGHT, renderer).parent("sketch");
   pg = createGraphics(WIDTH, HEIGHT);
 
-  // Initialize seed from query or generate a new one
+  // Initialize seed from query
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.has("seed")) {
     seed = urlParams.get("seed");
@@ -31,18 +31,18 @@ function generateSeed() {
 }
 
 function scaleCanvas() {
-  const frameContainer = document.getElementById("frame-container");
-  const frameContainerWidth = frameContainer ? frameContainer.offsetWidth : 0;
-  const frameContainerHeight = frameContainer ? frameContainer.offsetHeight : 0;
+  const container = document.getElementById("artwork-container");
+  const containerWidth = container ? container.offsetWidth : 0;
+  const containerHeight = container ? container.offsetHeight : 0;
 
   // Calculate frame dimensions to fit aspect ratio within frame container
   let frameWidth, frameHeight;
-  if (frameContainerWidth / FRAME_ASPECT_RATIO > frameContainerHeight) {
-    frameWidth = frameContainerHeight * FRAME_ASPECT_RATIO;
-    frameHeight = frameContainerHeight;
+  if (containerWidth / FRAME_ASPECT_RATIO > containerHeight) {
+    frameWidth = containerHeight * FRAME_ASPECT_RATIO;
+    frameHeight = containerHeight;
   } else {
-    frameWidth = frameContainerWidth;
-    frameHeight = frameContainerWidth * FRAME_ASPECT_RATIO;
+    frameWidth = containerWidth;
+    frameHeight = containerWidth * FRAME_ASPECT_RATIO;
   }
 
   const maxDimension = Math.max(WIDTH, HEIGHT);
