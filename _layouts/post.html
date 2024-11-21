@@ -3,12 +3,15 @@ layout: base
 ---
 
 <article class="
-prose lg:prose-xl prose-zinc dark:prose-invert mx-auto mb-12 max-w-prose p-4 prose-h1:font-semibold
+prose prose-zinc dark:prose-invert mx-auto mb-12 p-4
+prose-h1:font-semibold
 prose-p:before:content-none prose-p:after:content-none
-prose-blockquote:px-4 prose-blockquote:lg:px-6 prose-blockquote:py-px prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:border-0 prose-blockquote:rounded-lg prose-blockquote:bg-zinc-50 dark:prose-blockquote:bg-zinc-800 
-prose-figcaption:mb-[12px] prose-figcaption:lg:mb-[18px]
+prose-blockquote:px-4 prose-blockquote:py-px prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:border-0 prose-blockquote:rounded-lg prose-blockquote:bg-zinc-50 dark:prose-blockquote:bg-zinc-800 
+prose-figcaption:mb-[12px] 
+prose-code:text-xs prose-code:sm:text-sm prose-code:bg-zinc-50 dark:prose-code:bg-zinc-800
 prose-pre:bg-zinc-50 dark:prose-pre:bg-zinc-800
-prose-inline-code:whitespace-nowrap prose-inline-code:rounded-md prose-inline-code:px-1.5 prose-inline-code:py-0.5 prose-inline-code:bg-zinc-600/10 dark:prose-inline-code:bg-white/10 prose-inline-code:text-zinc-500 dark:prose-inline-code:text-zinc-400 before:prose-inline-code:content-none after:prose-inline-code:content-none
+prose-inline-code:font-medium prose-inline-code:whitespace-nowrap prose-inline-code:rounded-md prose-inline-code:px-1.5 prose-inline-code:py-0.5 prose-inline-code:bg-zinc-600/10 dark:prose-inline-code:bg-white/10 prose-inline-code:text-zinc-500 dark:prose-inline-code:text-zinc-400 before:prose-inline-code:content-none after:prose-inline-code:content-none
+prose-table:text-xs prose-table:sm:text-sm
 " itemscope itemtype="http://schema.org/BlogPosting">
   <header>
     <p>
@@ -18,7 +21,7 @@ prose-inline-code:whitespace-nowrap prose-inline-code:rounded-md prose-inline-co
       </time>
     </p>
     <h1 itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="font-medium text-xl text-zinc-500 lg:text-2xl dark:text-zinc-400">{{ page.description | escape }}</p>
+    <p class="font-medium text-xl text-zinc-500 dark:text-zinc-400">{{ page.description | escape }}</p>
     <div class="flex aspect-video w-full items-center justify-center overflow-hidden rounded-md">
       <img src="/assets/images/shared/posts.jpg" alt="Abstract painting by Aurelius Wendelken" class="object-none" style="object-position: {{ page.x }}% {{ page.y }}%;" />
     </div>

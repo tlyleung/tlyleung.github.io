@@ -15,3 +15,9 @@ svg {
 		stroke: currentColor !important;
 	}
 }
+
+mjx-container {
+	display: inline-grid;
+	max-width: 100%;
+	overflow-x: auto;
+}

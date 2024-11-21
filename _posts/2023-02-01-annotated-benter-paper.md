@@ -44,7 +44,7 @@ pd.read_csv(DATA_FILE, index_col=[0, 1, 2, 3])
 | **2023-07-16** | **Sha Tin**      | **9**  | **Chiu Chow Spirit**  | 8     |     10.0 |
 | **2023-07-16** | **Sha Tin**      | **9**  | **So We Joy**         | 9     |     33.0 |
 
-<p class="text-sm lg:text-lg text-zinc-500 dark:text-zinc-400">337003 rows × 2 columns</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400">337003 rows × 2 columns</p>
 </figure>
 
 ## Abstract
@@ -148,7 +148,7 @@ It can be presumed that valid fundamental information exists which can not be sy
 | 0.300--0.400 |  716 | 0.339 | 0.339 |  0.0 |
 |       >0.400 |  312 | 0.467 | 0.484 |  0.6 |
 
-<p class="text-sm lg:text-lg text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 32877</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 32877</p>
 </figure>
 
 <figure class="tabular-nums" markdown="1">
@@ -167,7 +167,7 @@ It can be presumed that valid fundamental information exists which can not be sy
 | 0.300--0.400 |  741 | 0.341 | 0.32  | -1.2 |
 |       >0.400 |  324 | 0.475 | 0.432 | -1.6 |
 
-<p class="text-sm lg:text-lg text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 32877</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 32877</p>
 </figure>
 
 **range** = the range of estimated probabilities
@@ -263,7 +263,7 @@ for start, end in DATE_RANGES:
 | 0.300--0.400 |  790 | 0.336680 | 0.337975 |  0.052713 |
 |       >0.400 |  419 | 0.478898 | 0.496420 |  0.196101 |
 
-<p class="text-sm lg:text-lg text-zinc-500 dark:text-zinc-400"># races = 3377, # starters = 34745</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400"># races = 3377, # starters = 34745</p>
 </figure>
 
 
@@ -283,7 +283,7 @@ for start, end in DATE_RANGES:
 | 0.300--0.400 |   836 | 0.337409 | 0.330144 |  -0.308628 |
 |       >0.400 |   393 | 0.468867 | 0.424936 |  -0.508843 |
 
-<p class="text-sm lg:text-lg text-zinc-500 dark:text-zinc-400"># races = 4534, # starters = 58272</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400"># races = 4534, # starters = 58272</p>
 </figure>
 
 <figure class="tabular-nums" markdown="1">
@@ -302,7 +302,7 @@ for start, end in DATE_RANGES:
 | 0.300--0.400 |  1207 | 0.339081 | 0.345485 |   0.325636 |
 |       >0.400 |   672 | 0.472380 | 0.497024 |   0.391450 |
 
-<p class="text-sm lg:text-lg text-zinc-500 dark:text-zinc-400"># races = 5261, # starters = 65992</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400"># races = 5261, # starters = 65992</p>
 </figure>
 
 <figure class="tabular-nums" markdown="1">
@@ -321,7 +321,7 @@ for start, end in DATE_RANGES:
 | 0.300--0.400 |  1519 | 0.340612 | 0.356814 |  0.915666 |
 |       >0.400 |   865 | 0.486887 | 0.528324 |  0.621833 |
 
-<p class="text-sm lg:text-lg text-zinc-500 dark:text-zinc-400"># races = 5757, # starters = 70071</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400"># races = 5757, # starters = 70071</p>
 </figure>
 
 A multinomial logit model using fundamental factors will also naturally produce an internally consistent set of probability estimates (Table 2). Here again there is generally good correspondence between estimated and actual frequencies. Table 2 however conceals a major, (and from a wagering point of view, disastrous) type of bias inherent in the fundamental model's probabilities. Consider the following two tables which represent roughly equal halves of the sample in Table 2. Table 3 shows the fundamental model's estimate versus actual frequency for those horses where the public's probability estimate was greater the fundamental model's. Table 4 is the same except that it is for those horses whose public estimate was less than the fundamental model's.
@@ -342,7 +342,7 @@ A multinomial logit model using fundamental factors will also naturally produce 
 | 0.300--0.400 |  165 | 0.342 | 0.448 |  2.9 |
 |       >0.400 |   54 | 0.453 | 0.519 |  1.0 |
 
-<p class="text-sm lg:text-lg text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 15741</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 15741</p>
 </figure>
 
 <figure class="tabular-nums" markdown="1">
@@ -361,7 +361,7 @@ A multinomial logit model using fundamental factors will also naturally produce 
 | 0.300--0.400 |  576 | 0.341 | 0.283 | -2.9 |
 |       >0.400 |  270 | 0.480 | 0.415 | -2.1 |
 
-<p class="text-sm lg:text-lg text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 17136</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 17136</p>
 </figure>
 
 There is an extreme and consistent bias in both tables. In virtually every range the actual frequency is significantly different than the fundamental model's estimate, and always in the direction of being closer to the public's estimate. The fundamental model's estimate of the probability cannot be considered to be an unbiased estimate independent of the public's estimate. Table 4 is particularly important because it is comprised of those horses that the model would have one bet on, that is, horses whose model-estimated probability is greater than their public probability. It is necessary to correct for this bias in order to accurately estimate the advantage of any particular bet.'
@@ -458,7 +458,7 @@ where $$c_{ji*}$$ denotes the probability as given by equation (1) for the horse
 | 0.300--0.400 |  853 | 0.34  | 0.328 |  0.7 |
 |       >0.400 | 358  | 0.479 | 0.492 |  0.5 |
 
-<p class="text-sm lg:text-lg text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 32877</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 32877</p>
 </figure>
 
 By comparison with Tables 1 and 2, Table 5 shows that there is more *spread* in the combined model's probabilities than in either the public's or the fundamental model's alone, that is, there are more horses in both the very high and very low probability ranges. This indicates that the combined model is more informative. More important is that the new probability estimates are without the bias shown in Tables 3 and 4, and thus are suitable for the accurate estimation of betting advantage. This is borne out by Tables 6 and 7, which are analogous to Tables 3 and 4 above except that they use the combined model probabilities instead of the raw fundamental model probabilities. 
@@ -479,7 +479,7 @@ By comparison with Tables 1 and 2, Table 5 shows that there is more *spread* in 
 | 0.300--0.400 |  393 | 0.337 | 0.349 |  0.5 |
 |       >0.400 |  159 | 0.471 | 0.509 |  1.0 |
 
-<p class="text-sm lg:text-lg text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 15741</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 15741</p>
 </figure>
 
 <figure class="tabular-nums" markdown="1">
@@ -498,7 +498,7 @@ By comparison with Tables 1 and 2, Table 5 shows that there is more *spread* in 
 | 0.300--0.400 |  460 | 0.342 | 0.311 | -1.4 |
 |       >0.400 |  199 | 0.485 | 0.477 | -0.2 |
 
-<p class="text-sm lg:text-lg text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 17136</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 17136</p>
 </figure>
 
 Observe that the above tables show no significant bias one way or the other.
@@ -820,7 +820,7 @@ This formula is significantly biased, and should not be used for betting purpose
 | 0.300--0.400 | 1011 | 0.338 | 0.317 | -1.4 |
 |       >0.400 |  395 | 0.476 | 0.372 | -4.3 |
 
-<p class="text-sm lg:text-lg text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 29679</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 29679</p>
 </figure>
 
 <figure class="tabular-nums" markdown="1">
@@ -839,7 +839,7 @@ This formula is significantly biased, and should not be used for betting purpose
 | 0.300--0.400 | 1219 | 0.341 | 0.273 | -5.3 |
 |       >0.400 |  601 | 0.492 | 0.333 | -8.3 |
 
-<p class="text-sm lg:text-lg text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 26481</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 26481</p>
 </figure>
 
 The large values of the Z-statistics show the significance of the bias in the Harville formula. The tendency is for low probability horses to finish second and third more often than predicted, and for high probability horses to finish second and third less often. The effect is more pronounced for 3rd place than for 2nd. An effective, and computationally economical way to correct for this is as follows: Given the win probability array, ($$\pi_1, \pi_2, ..., \pi_N)$$, create a second array $$\sigma$$ such that,
@@ -872,7 +872,7 @@ The parameters $$\gamma$$ and $$\delta$$ can be estimated via maximum likelihood
 | 0.300--0.400 |  616 | 0.336 | 0.349 |  0.7 |
 |       >0.400 |  174 | 0.456 | 0.397 | -1.6 |
 
-<p class="text-sm lg:text-lg text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 29679</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 29679</p>
 </figure>
 
 <figure class="tabular-nums" markdown="1">
@@ -891,7 +891,7 @@ The parameters $$\gamma$$ and $$\delta$$ can be estimated via maximum likelihood
 | 0.300--0.400 |  582 | 0.337 | 0.299 | -2.0 |
 |       >0.400 |  151 | 0.480 | 0.450 | -0.7 |
 
-<p class="text-sm lg:text-lg text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 26481</p>
+<p class="text-sm text-zinc-500 dark:text-zinc-400"># races = 3198, # horses = 26481</p>
 </figure>
 
 
