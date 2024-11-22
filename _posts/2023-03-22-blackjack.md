@@ -7,8 +7,6 @@ x: 33
 y: 46
 ---
 
-## Background
-
 Blackjack, often referred to as 21, is one of the most popular casino games worldwide. Its roots can be traced back to the 17th century, with a similar game called "Vingt-et-Un" played in French casinos. However, the modern game as we know it, along with the quest to crack its code of strategy, began in the United States in the early 20th century.
 
 The objective of Blackjack is deceptively simple: beat the dealer's hand without exceeding 21. For years, it was a game of intuition and luck, until the 1950s, when the first scientific approach to the game emerged. Roger Baldwin, Wilbert Cantey, Herbert Maisel, and James McDermott, known as the "Four Horsemen of Aberdeen," used calculators and probability theory to analyze the game. Their 1956 publication[^baldwin56] in the Journal of the American Statistical Association laid the groundwork for all future efforts in understanding Blackjack strategy, presenting a *basic strategy* to minimize the house edge.
