@@ -1,0 +1,18 @@
+/* Thicker paths for edges (arrows) */
+.flowchart .edgePaths path {
+    stroke-width: 2px !important;
+}
+
+/* Hide the background of the edge label */
+.flowchart .edgeLabel rect,
+.flowchart .edgeLabel p,
+.flowchart .labelBkg {
+    background-color: transparent !important;
+}
+
+/* Thicker node borders (rectangles, circles, and polygons) */
+.flowchart .node rect, 
+.flowchart .node circle, 
+.flowchart .node polygon {
+    stroke-width: 2px !important;
+}
