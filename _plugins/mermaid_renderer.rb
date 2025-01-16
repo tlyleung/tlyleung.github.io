@@ -16,22 +16,27 @@ module Jekyll
       content = page.content
       updated_content = content.gsub(/```mermaid(.*?)```/m) do |match|
         mermaid_code = $1.strip
-
-        # Render light theme and replace the class
+    
+        # Render light and dark SVGs
         light_svg = render_mermaid_to_svg(mermaid_code, 'neutral')
-        light_svg.gsub!(/class="flowchart"/, 'class="flowchart block dark:hidden"')
-
-        # Render dark theme and replace the class
         dark_svg = render_mermaid_to_svg(mermaid_code, 'dark')
-        dark_svg.gsub!(/class="flowchart"/, 'class="flowchart hidden dark:block"')
-
-        # Combine the light and dark versions
-        <<~HTML
-          #{light_svg}
-          #{dark_svg}
-        HTML
+    
+        # Ensure both SVGs are successfully rendered
+        if light_svg && dark_svg
+          light_svg.gsub!(/class="flowchart"/, 'class="flowchart block dark:hidden"')
+          dark_svg.gsub!(/class="flowchart"/, 'class="flowchart hidden dark:block"')
+    
+          # Combine the light and dark versions
+          <<~HTML
+            #{light_svg}
+            #{dark_svg}
+          HTML
+        else
+          Jekyll.logger.error "Mermaid Render Failed", "Could not render one or both themes for Mermaid diagram."
+          match # Return the original Mermaid block as fallback
+        end
       end
-
+    
       page.content = updated_content
     end
 
@@ -46,7 +51,7 @@ module Jekyll
         File.write(input_path, mermaid_code)
 
         css_path = File.expand_path('assets/css/mermaid.css', Dir.pwd)
-        command = "npx mmdc -i #{input_path} -o #{output_path} --svgId #{svg_id} --theme #{theme} --cssFile #{css_path} --backgroundColor transparent --quiet"
+        command = "node puppeteer-config.js && npx mmdc -i #{input_path} -o #{output_path} --svgId #{svg_id} --theme #{theme} --cssFile #{css_path} --backgroundColor transparent --quiet"
         stdout, stderr, status = Open3.capture3(command)
 
         if status.success?
