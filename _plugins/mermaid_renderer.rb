@@ -1,4 +1,5 @@
 require 'fileutils'
+require 'digest'
 require 'open3'
 require 'securerandom'
 require 'tmpdir'
@@ -7,7 +8,10 @@ module Jekyll
   class MermaidRenderer < Jekyll::Generator
     safe true
 
+    CACHE_DIR = File.join(Dir.pwd, '.mermaid-cache')
+
     def generate(site)
+      FileUtils.mkdir_p(CACHE_DIR)
       site.pages.each { |page| process_page(page) }
       site.posts.docs.each { |post| process_page(post) }
     end
@@ -16,25 +20,42 @@ module Jekyll
       content = page.content
       updated_content = content.gsub(/```mermaid(.*?)```/m) do |match|
         mermaid_code = $1.strip
-    
-        # Render light and dark SVGs
-        light_svg = render_mermaid_to_svg(mermaid_code, 'neutral')
-        dark_svg = render_mermaid_to_svg(mermaid_code, 'dark')
-    
-        # Ensure both SVGs are successfully rendered
-        if light_svg && dark_svg
-          light_svg.gsub!(/class="flowchart"/, 'class="flowchart block dark:hidden"')
-          dark_svg.gsub!(/class="flowchart"/, 'class="flowchart hidden dark:block"')
-    
-          # Combine the light and dark versions
-          <<~HTML
-            #{light_svg}
-            #{dark_svg}
-          HTML
-        else
-          Jekyll.logger.error "Mermaid Render Failed", "Could not render one or both themes for Mermaid diagram."
-          match # Return the original Mermaid block as fallback
+
+        # Generate a hash of the Mermaid code to determine if it has changed
+        hash = Digest::SHA256.hexdigest(mermaid_code)
+        cached_light_path = File.join(CACHE_DIR, "#{hash}_light.svg")
+        cached_dark_path = File.join(CACHE_DIR, "#{hash}_dark.svg")
+
+        light_svg = cached_light_path if File.exist?(cached_light_path)
+        dark_svg = cached_dark_path if File.exist?(cached_dark_path)
+
+        unless light_svg && dark_svg
+          Jekyll.logger.info "Regenerating Mermaid Diagram", "Hash: #{hash}"
+
+          # Render light and dark versions
+          light_svg_content = render_mermaid_to_svg(mermaid_code, 'neutral')
+          dark_svg_content = render_mermaid_to_svg(mermaid_code, 'dark')
+
+          if light_svg_content && dark_svg_content
+            File.write(cached_light_path, light_svg_content)
+            File.write(cached_dark_path, dark_svg_content)
+
+            light_svg = cached_light_path
+            dark_svg = cached_dark_path
+          else
+            Jekyll.logger.error "Mermaid Render Failed", "Could not render one or both themes for Mermaid diagram."
+            next match # Skip rendering and return the original block
+          end
         end
+
+        # Combine the light and dark versions with proper class attributes
+        light_svg_content = File.read(light_svg).gsub(/class="flowchart"/, 'class="flowchart block dark:hidden"')
+        dark_svg_content = File.read(dark_svg).gsub(/class="flowchart"/, 'class="flowchart hidden dark:block"')
+
+        <<~HTML
+          #{light_svg_content}
+          #{dark_svg_content}
+        HTML
       end
     
       page.content = updated_content
