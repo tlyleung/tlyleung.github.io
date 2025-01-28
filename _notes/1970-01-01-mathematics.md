@@ -18,6 +18,18 @@ This cheatsheet attempts to give a high-level overview of the mathematics used i
 </section>
 
 <section class="relative mb-4 break-inside-avoid-column overflow-hidden rounded-md bg-zinc-50 px-4 py-2 dark:bg-zinc-800" markdown="1">
+<div class="absolute -top-2 right-4 h-16 w-16 text-zinc-200 dark:text-zinc-900">{% svg /assets/images/streamline/book-flip-page.svg width="100%" height="100%" %}</div>
+# Contents
+
+- [Probability](#probability)
+    - [Conditional Probability](#probability-conditional-probability)
+    - [Random Variables](#probability-random-variables)
+- [Linear Algebra](#linear-algebra)
+    - [Products](#linear-algebra-products)
+    - [Operations & Properties](#linear-algebra-operations--properties)
+</section>
+
+<section class="relative mb-4 break-inside-avoid-column overflow-hidden rounded-md bg-zinc-50 px-4 py-2 dark:bg-zinc-800" markdown="1">
 # Probability[^prob2019]
 
 Probabilities arise when we perform an experiment:
@@ -424,7 +436,7 @@ $$u \otimes v = \begin{bmatrix} a_1 b_1 & a_1 b_2 & \ldots & a_1 b_n \\ a_2 b_1 
 
 <section class="mb-4 px-4 py-2 break-inside-avoid-column rounded-md bg-zinc-50 dark:bg-zinc-800" markdown="1" style="/assets/images/streamline/rotate-angle.svg">
 
-# Linear Algebra: Operations and Properties[^cs229linear]
+# Linear Algebra: Operations & Properties[^cs229linear]
 
 ## Identity Matrix
 
