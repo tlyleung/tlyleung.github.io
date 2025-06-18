@@ -12,6 +12,7 @@ module Jekyll
 
     def generate(site)
       FileUtils.mkdir_p(CACHE_DIR)
+      site.collections['notes'].docs.each { |note| process_page(note) }
       site.pages.each { |page| process_page(page) }
       site.posts.docs.each { |post| process_page(post) }
     end

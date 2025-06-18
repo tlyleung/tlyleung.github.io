@@ -859,6 +859,10 @@ $$\hat{y}(x) = \arg\max_{c \in C} \sum_{i \in N_k(x)} I(y_i = c)$$
 - The k-Nearest Neighbours (k-NN) algorithm assigns the class that is most frequent among the $$k$$ closest observations in the feature space.
 - No explicit training; classification is based on the majority class among the nearest neighbors using distance metrics.
 - Use when there's no assumption about the underlying distribution of the data and when simplicity is desired.
+- Algorithm can either be exact or approximate:
+  - Clustering-based (e.g. HNSW): group points into clusters based on similarity, then search for neighbors only within relevant clusters, reducing the search space.
+  - Locality-sensitivity hashing (LSH): uses a hash function to map similar points to the same bucket, enabling efficient approximate search in high-dimensional spaces.
+  - Tree-based (e.g. $$k$$-d Tree): organize data into a hierarchical structure, allowing efficient nearest-neighbor search by pruning partitions that cannot contain the nearest neighbors.
 
 ### Logistic Regression
 
@@ -891,6 +895,38 @@ $$\hat{y}(x) = \text{sign}(w^T x + b)$$
 - The Support Vector Classifier (SVC) finds the hyperplane that best separates the data into classes by maximising the margin between them.
 - Parameters are estimated by solving a quadratic optimization problem to maximize the margin while allowing for some misclassification via slack variables.
 - Use when the data is complex and not linearly separable, and you need a robust classifier with regularization to avoid overfitting.
+
+---
+
+## Variants
+
+### Active Learning
+
+Model selects the most informative samples to be labeled by an oracle (e.g. a human expert) to improve learning efficiency.
+
+### Contrastive Learning
+
+Learning by distinguishing between similar and dissimilar data points.
+
+### Few-Shot Learning
+
+Learning from very few labeled examples, often using meta-learning.
+
+### Meta-Learning
+
+Learning across multiple tasks to generalize better to new, unseen tasks with limited data.
+
+### Self-Supervised Learning
+
+Model generates its own labels from unlabeled data using pretext tasks.
+
+### Semi-supervised Learning
+
+Learning from a dataset with a small amount of labeled data and a large amount of unlabeled data, leveraging structure in the unlabeled examples.
+
+### Weakly Supervised Learning
+
+Learning from data with imperfect, noisy, or incomplete labels.
 
 </section>
 
@@ -958,7 +994,14 @@ Reinforcement Learning models help agents learn the best action to take in an en
 
 The <u>environment</u> is the world where the <u>agent</u> operates. At each step, the agent perceives a <u>state</u> (complete world description) or an <u>observation</u> (partial information) and selects an <u>action</u> from the <u>action space</u> (discrete or continuous). A <u>policy</u> is a rule the agent follows to choose actions, aiming to maximise <u>rewards</u>.
 
-[Figure 3.1 from Sutton and Barto]
+<figure class="flex flex-col items-center">
+```mermaid
+graph TD
+    Agent -- Action (Aₜ) --> Environment
+    Environment -- Reward (Rₜ) --> Agent
+    Environment -- State (Sₜ) --> Agent
+```
+</figure>
 
 ### Terminology
 
@@ -1015,20 +1058,23 @@ Item feature similarities
 
 - **Pros:** ability to recommend new videos, ability the capture unique user interests
 - **Cons:** difficult to discover a user's new interests, requires domain knowledge to engineer features
+- **Models:** image embeddings, text embeddings
 
 ### Collaborative Filtering
 
 User-to-user similarities or item-to-item similarities
 
-- **Pros:** no domain knowledge needed, easy to discover users' new areas of interest, efficient
+- **Pros:** no domain knowledge needed, easy to discover users' new areas of interest, efficient, training/serving speed
 - **Cons:** cold-start problem, cannot handle niche interests
+- **Models:** matrix factorization
 
 ### Hybrid Filtering
 
 Parallel or sequential combination of content-based and collaborative filtering
 
 - **Pros:** combines strengths of both methods for better recommendations
-- **Cons:** more complex to implement
+- **Cons:** more complex to implement, training/serving speed
+- **Models:** two-tower neural network
 
 ---
 
@@ -1140,6 +1186,49 @@ Reduces model bias and variance by training different models in parallel on the 
 
 </section>
 
+<section class="relative mb-4 break-inside-avoid-column overflow-hidden rounded-md bg-zinc-50 px-4 py-2 dark:bg-zinc-800" markdown="1">
+<div class="absolute -top-2 right-4 h-16 w-16 text-zinc-200 dark:text-zinc-900">{% svg /assets/images/streamline/picture-landscape.svg width="100%" height="100%" %}</div>
+# Models: Image Generation Models (TODO)
+
+Deep learning architectures designed to synthesize realistic or stylized images from various inputs such as noise, text, or existing images.
+
+- **Diffusion Models** generate images by iteratively denoising a random noise input.
+
+- **Low-Rank Adaptation (LoRA)** is a fine-tuning technique that freezes the pre-trained model weights and injects trainable low-rank matrices into each transformer block.
+
+- **DreamBooth** fine-tunes all the parameters in the diffusion model while keeping the text transformer frozen.
+
+- **Variational Autoencoders (VAEs)** enable diffusion to operate in a compressed latent space instead of raw pixel space.
+
+- **Text Inversion (Negative Embeddings)** allows models to learn new concepts from a small number of sample images by optimizing a new word embedding token for each concept.
+
+- **Low-Rank Conditioning for Regularization in Image Synthesis (LyCORIS)** extends LoRA by incorporating additional conditioning mechanisms.
+
+</section>
+
+<section class="relative mb-4 break-inside-avoid-column overflow-hidden rounded-md bg-zinc-50 px-4 py-2 dark:bg-zinc-800" markdown="1">
+<div class="absolute -top-2 right-4 h-16 w-16 text-zinc-200 dark:text-zinc-900">{% svg /assets/images/streamline/paragraph-justified-align.svg width="100%" height="100%" %}</div>
+# Models: Language Models (TODO)
+
+A language model is a probability distribution over words.
+
+## Representation Learning
+
+Representation learning focuses on encoding text into numerical representations that capture semantic meaning.
+
+### Statistical Methods
+
+- **Bag of Words**: represents text as an unordered collection of words, ignoring grammar and context.
+- **Term Frequency Inverse Document Frequency (TF-IDF)**: assigns importance to words based on their frequency in a document relative to their occurrence across a corpus.
+
+### Machine Learning Approaches
+
+- **Word2Vec**: uses neural networks to learn word embeddings. E.g. Continuous Bag of Words (CBOW) and Skip-Gram models.
+- **Transformers**: deep learning models that capture long-range dependencies and contextual meaning. E.g. BERT, GPT-4.
+
+</section>
+
+
 [^cs229]: [CS3229: Machine Learning](https://cs229.stanford.edu/)
 [^cs224n]: [CS3224N: Natural Language Processing with Deep Learning](https://web.stanford.edu/class/cs224n/)
 [^cs231n]: [CS3314N: Deep Learning for Computer Vision](http://vision.stanford.edu/teaching/cs231n/)
@@ -1158,11 +1247,12 @@ Reduces model bias and variance by training different models in parallel on the 
 [^generativeai]: [Google Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
 [^google]: [Google Machine Learning Education](https://developers.google.com/machine-learning)
 [^hugging_face]: [Hugging Face Documentation](https://huggingface.co/docs)
+[^intro_reinforcement_learning]: [Introduction to Reinforcement Learning](https://www.deepmind.com/learning-resources/introduction-to-reinforcement-learning-with-david-silver)
 [^ml_rules]: [Rules of Machine Learning: Best Practices for ML Engineering.](https://developers.google.com/machine-learning/guides/rules-of-ml)
 [^pair]: [People + AI Guidebook](https://pair.withgoogle.com/guidebook/)
 [^pandas]: [Pandas Documentation](https://pandas.pydata.org/docs/)
 [^pytorch]: [PyTorch Documentation](https://pytorch.org/docs/stable/index.html)
 [^pytorch_lightning]: [PyTorch Lightning Documentation](https://lightning.ai/docs/pytorch/stable/)
-[^reinforcement_learning]: [Introduction to Reinforcement Learning](https://www.deepmind.com/learning-resources/introduction-to-reinforcement-learning-with-david-silver)
+[^reinforcement_learning]: [Reinforcement Learning](http://incompleteideas.net/book/the-book-2nd.html)
 [^sklearn]: [Scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html)
 [^spinning_up]: [Spinning Up in Deep Reinforcement Learning](https://spinningup.openai.com/en/latest/)
