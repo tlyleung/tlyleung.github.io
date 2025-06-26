@@ -3,8 +3,8 @@ layout: post
 title: AIMO Progress Prize 1
 description: Solving national-level math challenges using AI models.
 authors: [tlyleung]
-x: 40
-y: 23
+x: 63
+y: 84
 ---
 
 For decades, the path to high school mathematical glory has been a straightforward one. Students with an aptitude for problem-solving would spend years practicing in quiet libraries, under the watchful eyes of devoted coaches, with the unspoken understanding that success was the result of talent, perseverance, and grit. For many, the pinnacle of this journey was the International Mathematical Olympiad (IMO) — a test of logic and creativity that thrust unknown prodigies into the public spotlight.
